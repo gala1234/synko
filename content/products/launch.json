@@ -1,0 +1,63 @@
+{
+  "id": "launch",
+  "badge": "SKU-001",
+  "title": "Synko Launch",
+  "tagline": "Setup completo en 2 semanas",
+  "hero": {
+    "time": "2 semanas",
+    "price": "Desde 1.800€"
+  },
+  "metadata": {
+    "title": "Synko Launch | Tu primer agente IA en 2 semanas",
+    "description": "Setup completo de automatización IA en 2 semanas. Incluye agente personalizado, integración API y dashboard. Desde 1.800€."
+  },
+  "sections": {
+    "problem": {
+      "title": "El problema que resolvemos",
+      "content": "Los fundadores de e-commerce y negocios digitales están atrapados en tareas repetitivas, sienten que su negocio no escala y no tienen tiempo para dedicar a crecer. Cada día se convierte en una lucha constante contra los procesos manuales que consumen tiempo valioso."
+    },
+    "solution": {
+      "title": "La solución que necesitas",
+      "content": "Synko Launch te libera de esta carga operativa. En solo 2 semanas recibes un setup completo de automatización que ordena procesos, conecta sistemas y te da claridad total. El objetivo es que dejes de apagar fuegos y puedas enfocarte en lo que realmente importa: hacer crecer tu negocio."
+    },
+    "benefits": {
+      "title": "Beneficios clave",
+      "subtitle": "Resultados que puedes esperar desde el primer día",
+      "items": [
+        "Escalar rápido sin dolores de cabeza",
+        "Reducir errores manuales y costes",
+        "Integrar las herramientas que ya usas",
+        "Tener un equipo formado y autónomo"
+      ]
+    },
+    "includes": {
+      "title": "Qué incluye",
+      "subtitle": "Todo lo necesario para tu primer agente IA",
+      "items": [
+        "Análisis completo de procesos y oportunidades",
+        "Implementación de automatizaciones clave",
+        "Integración con sistemas y plataformas existentes",
+        "Formación del equipo para adopción rápida",
+        "Soporte durante 3 meses para ajustes finos"
+      ]
+    },
+    "pricing": {
+      "title": "Precio y tiempo",
+      "subtitle": "Inversión transparente con resultados garantizados",
+      "price": "1.800–2.400 €",
+      "priceNote": "pago único",
+      "deliveryTime": "2 semanas",
+      "deliveryNote": "Desde el primer contacto"
+    },
+    "target": {
+      "title": "Para quién es",
+      "content": "Best for: E-commerce/negocios digitales con poco tiempo y muchas tareas repetitivas."
+    },
+    "cta": {
+      "title": "¿Listo para transformar tu negocio?",
+      "content": "Solicita Synko Launch y libérate de las tareas repetitivas para siempre. En solo 2 semanas tendrás el setup completo que necesitas para escalar sin límites.",
+      "buttonText": "Solicitar Synko Launch",
+      "responseTime": "Respuesta en menos de 24h"
+    }
+  }
+}

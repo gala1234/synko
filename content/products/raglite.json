@@ -1,0 +1,63 @@
+{
+  "id": "raglite",
+  "badge": "SKU-005",
+  "title": "Synko RAG Lite",
+  "tagline": "Base de conocimiento con IA",
+  "hero": {
+    "time": "2-3 semanas",
+    "price": "Desde 1.200€"
+  },
+  "metadata": {
+    "title": "Synko RAG Lite | Base de conocimiento inteligente con IA",
+    "description": "Sistema de base de conocimiento con IA para equipos de soporte y ventas. Reduce tickets y mejora respuestas. Desde 1.200€."
+  },
+  "sections": {
+    "problem": {
+      "title": "El problema que resolvemos",
+      "content": "Los equipos de soporte y ventas reciben las mismas preguntas repetitivas constantemente, perdiendo tiempo en respuestas que podrían automatizarse. La información está dispersa, las respuestas son inconsistentes y el equipo se satura con consultas básicas."
+    },
+    "solution": {
+      "title": "La solución que necesitas",
+      "content": "Synko RAG Lite crea una base de conocimiento inteligente que responde automáticamente las preguntas más frecuentes con precisión. Tu equipo se enfoca en casos complejos mientras la IA maneja las consultas rutinarias con respuestas consistentes y precisas."
+    },
+    "benefits": {
+      "title": "Beneficios clave",
+      "subtitle": "Respuestas inteligentes que liberan a tu equipo",
+      "items": [
+        "Reducir tickets de soporte hasta 70%",
+        "Respuestas consistentes y precisas 24/7",
+        "Liberar tiempo del equipo para casos complejos",
+        "Mejorar satisfacción del cliente"
+      ]
+    },
+    "includes": {
+      "title": "Qué incluye",
+      "subtitle": "Base de conocimiento completa con IA",
+      "items": [
+        "Sistema RAG personalizado para tu negocio",
+        "Entrenamiento con tu documentación existente",
+        "Interfaz de chat inteligente",
+        "Panel de control y métricas",
+        "Integración con sistemas de soporte"
+      ]
+    },
+    "pricing": {
+      "title": "Precio y tiempo",
+      "subtitle": "Inversión que reduce costes operativos inmediatamente",
+      "price": "1.200–1.800 €",
+      "priceNote": "pago único",
+      "deliveryTime": "2-3 semanas",
+      "deliveryNote": "Incluye entrenamiento del modelo"
+    },
+    "target": {
+      "title": "Para quién es",
+      "content": "Perfecto para: Equipos de soporte/ventas con muchas preguntas repetitivas que quieren reducir tickets y mejorar respuestas."
+    },
+    "cta": {
+      "title": "¿Listo para automatizar el soporte?",
+      "content": "Solicita Synko RAG Lite y transforma tu soporte con IA. Respuestas inteligentes que liberan a tu equipo para lo que realmente importa.",
+      "buttonText": "Solicitar RAG Lite",
+      "responseTime": "Respuesta en menos de 24h"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "scale",
+  "badge": "SKU-002",
+  "title": "Synko Scale",
+  "tagline": "Escala integraciones y reporting",
+  "hero": {
+    "time": "3-4 semanas",
+    "price": "Desde 3.000€"
+  },
+  "metadata": {
+    "title": "Synko Scale | Escalado avanzado de automatizaciones empresariales",
+    "description": "Solución enterprise para escalar automatizaciones con integraciones avanzadas y reporting completo. Desde 3.000€."
+  },
+  "sections": {
+    "problem": {
+      "title": "El problema que resolvemos",
+      "content": "Las empresas que ya automatizaron procesos básicos necesitan escalar a nivel enterprise: integraciones complejas entre múltiples sistemas, reporting avanzado, escalabilidad para grandes volúmenes y arquitecturas robustas que soporten el crecimiento."
+    },
+    "solution": {
+      "title": "La solución que necesitas",
+      "content": "Synko Scale lleva tus automatizaciones al siguiente nivel con arquitecturas enterprise, integraciones avanzadas y sistemas de reporting que escalan contigo. La solución completa para empresas que buscan automatización a gran escala."
+    },
+    "benefits": {
+      "title": "Beneficios clave",
+      "subtitle": "Automatización enterprise que escala sin límites",
+      "items": [
+        "Escalar automatizaciones a nivel enterprise",
+        "Integraciones complejas entre múltiples sistemas",
+        "Reporting avanzado y business intelligence",
+        "Arquitectura robusta para alto volumen"
+      ]
+    },
+    "includes": {
+      "title": "Qué incluye",
+      "subtitle": "Solución enterprise completa",
+      "items": [
+        "Arquitectura enterprise escalable",
+        "Integraciones avanzadas multi-sistema",
+        "Sistema de reporting y BI personalizado",
+        "Optimización para alto volumen",
+        "Soporte dedicado y consultoría estratégica"
+      ]
+    },
+    "pricing": {
+      "title": "Precio y tiempo",
+      "subtitle": "Inversión enterprise para resultados a gran escala",
+      "price": "3.000–4.500 €",
+      "priceNote": "pago único",
+      "deliveryTime": "3-4 semanas",
+      "deliveryNote": "Implementación enterprise completa"
+    },
+    "target": {
+      "title": "Para quién es",
+      "content": "Perfecto para: Empresas que ya automatizaron y ahora buscan crecer con integraciones avanzadas, datos y escalabilidad."
+    },
+    "cta": {
+      "title": "¿Listo para escalar a nivel enterprise?",
+      "content": "Solicita Synko Scale y lleva tus automatizaciones al siguiente nivel. Solución enterprise para crecimiento sin límites.",
+      "buttonText": "Solicitar Scale",
+      "responseTime": "Respuesta en menos de 24h"
+    }
+  }
+}

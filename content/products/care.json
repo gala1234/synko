@@ -1,0 +1,63 @@
+{
+  "id": "care",
+  "badge": "SKU-007",
+  "title": "Synko Care Plan",
+  "tagline": "Optimización mensual continua",
+  "hero": {
+    "time": "Mensual",
+    "price": "Desde 350€/mes"
+  },
+  "metadata": {
+    "title": "Synko Care Plan | Optimización continua de automatizaciones",
+    "description": "Plan de mantenimiento y optimización mensual para automatizaciones críticas. Rendimiento máximo garantizado. Desde 350€/mes."
+  },
+  "sections": {
+    "problem": {
+      "title": "El problema que resolvemos",
+      "content": "Las automatizaciones pierden eficiencia con el tiempo, aparecen nuevos casos edge, cambian las APIs y plataformas, y el rendimiento se degrada. Sin mantenimiento continuo, lo que funcionaba perfectamente empieza a fallar o ser subóptimo."
+    },
+    "solution": {
+      "title": "La solución que necesitas",
+      "content": "Synko Care Plan mantiene tus automatizaciones funcionando al máximo rendimiento. Optimización continua, monitorización proactiva y mejoras mensuales que garantizan que tu sistema evolucione con tu negocio."
+    },
+    "benefits": {
+      "title": "Beneficios clave",
+      "subtitle": "Rendimiento máximo garantizado mes a mes",
+      "items": [
+        "Optimización continua de rendimiento",
+        "Monitorización proactiva 24/7",
+        "Actualizaciones y mejoras mensuales",
+        "Soporte prioritario y resolución rápida"
+      ]
+    },
+    "includes": {
+      "title": "Qué incluye",
+      "subtitle": "Cuidado completo de tus automatizaciones",
+      "items": [
+        "Revisión mensual de rendimiento",
+        "Optimización de procesos existentes",
+        "Monitorización continua y alertas",
+        "Actualizaciones de seguridad y compatibilidad",
+        "Soporte prioritario por Slack/email"
+      ]
+    },
+    "pricing": {
+      "title": "Precio y tiempo",
+      "subtitle": "Inversión mensual para máximo rendimiento",
+      "price": "350–700 €",
+      "priceNote": "por mes",
+      "deliveryTime": "Inmediato",
+      "deliveryNote": "Activación en 24h"
+    },
+    "target": {
+      "title": "Para quién es",
+      "content": "Perfecto para: Negocios con automatizaciones críticas que quieren rendimiento máximo y mejora continua."
+    },
+    "cta": {
+      "title": "¿Listo para el máximo rendimiento?",
+      "content": "Únete a Synko Care Plan y garantiza que tus automatizaciones funcionen siempre al máximo nivel. Optimización continua para resultados excepcionales.",
+      "buttonText": "Solicitar Care Plan",
+      "responseTime": "Respuesta en menos de 24h"
+    }
+  }
+}

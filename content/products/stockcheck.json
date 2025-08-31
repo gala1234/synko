@@ -1,0 +1,63 @@
+{
+  "id": "stockcheck",
+  "badge": "SKU-003",
+  "title": "Synko StockCheck",
+  "tagline": "Verifica stock en tiempo real",
+  "hero": {
+    "time": "1-2 semanas",
+    "price": "Desde 900€"
+  },
+  "metadata": {
+    "title": "Synko StockCheck | Control de inventario automático 24/7",
+    "description": "Sistema de control de stock en tiempo real para e-commerce. Evita roturas de stock y optimiza inventario. Desde 900€."
+  },
+  "sections": {
+    "problem": {
+      "title": "El problema que resolvemos",
+      "content": "Las tiendas online con catálogo amplio sufren roturas de stock constantes, pérdida de ventas por productos agotados y exceso de inventario en otros. La gestión manual del stock es imposible cuando tienes cientos o miles de productos, y los sistemas básicos no dan la visibilidad necesaria."
+    },
+    "solution": {
+      "title": "La solución que necesitas",
+      "content": "Synko StockCheck te da control total sobre tu inventario 24/7. Monitoriza stock en tiempo real, predice roturas antes de que ocurran y optimiza automáticamente los niveles de inventario. El resultado: nunca más perder ventas por falta de stock."
+    },
+    "benefits": {
+      "title": "Beneficios clave",
+      "subtitle": "Control total de inventario sin esfuerzo manual",
+      "items": [
+        "Evitar roturas de stock y pérdida de ventas",
+        "Optimizar niveles de inventario automáticamente",
+        "Alertas inteligentes antes de agotarse",
+        "Integración con tu sistema actual"
+      ]
+    },
+    "includes": {
+      "title": "Qué incluye",
+      "subtitle": "Sistema completo de gestión de inventario",
+      "items": [
+        "Monitorización en tiempo real de todos los productos",
+        "Alertas automáticas de stock bajo",
+        "Predicción de roturas basada en tendencias",
+        "Dashboard de control de inventario",
+        "Integración con plataformas de e-commerce"
+      ]
+    },
+    "pricing": {
+      "title": "Precio y tiempo",
+      "subtitle": "Inversión que se paga sola evitando pérdidas",
+      "price": "900–1.200 €",
+      "priceNote": "pago único",
+      "deliveryTime": "1-2 semanas",
+      "deliveryNote": "Desde la configuración inicial"
+    },
+    "target": {
+      "title": "Para quién es",
+      "content": "Ideal para: Tiendas online con catálogo amplio que necesitan control de inventario 24/7 para evitar roturas de stock."
+    },
+    "cta": {
+      "title": "¿Listo para controlar tu inventario?",
+      "content": "Solicita Synko StockCheck y nunca más pierdas ventas por falta de stock. Control total de inventario en tiempo real.",
+      "buttonText": "Solicitar StockCheck",
+      "responseTime": "Respuesta en menos de 24h"
+    }
+  }
+}

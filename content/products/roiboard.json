@@ -1,0 +1,63 @@
+{
+  "id": "roiboard",
+  "badge": "SKU-006",
+  "title": "Synko ROI Board",
+  "tagline": "Dashboard de métricas y atribución",
+  "hero": {
+    "time": "1 semana",
+    "price": "Desde 600€"
+  },
+  "metadata": {
+    "title": "Synko ROI Board | Dashboard de métricas y ROI de automatización",
+    "description": "Dashboard completo para medir ROI y métricas de automatización. Datos claros para decisiones inteligentes. Desde 600€."
+  },
+  "sections": {
+    "problem": {
+      "title": "El problema que resolvemos",
+      "content": "CEOs, founders y marketers no tienen visibilidad clara del retorno de sus automatizaciones. Los datos están dispersos, es difícil medir el impacto real y tomar decisiones basadas en métricas concretas sobre qué optimizar o escalar."
+    },
+    "solution": {
+      "title": "La solución que necesitas",
+      "content": "Synko ROI Board centraliza todas las métricas importantes en un dashboard claro y accionable. Ve el ROI real de cada automatización, identifica oportunidades de mejora y toma decisiones basadas en datos concretos."
+    },
+    "benefits": {
+      "title": "Beneficios clave",
+      "subtitle": "Datos claros para decisiones inteligentes",
+      "items": [
+        "Medir ROI real de cada automatización",
+        "Identificar oportunidades de optimización",
+        "Tomar decisiones basadas en datos",
+        "Demostrar valor a stakeholders"
+      ]
+    },
+    "includes": {
+      "title": "Qué incluye",
+      "subtitle": "Dashboard completo de métricas y ROI",
+      "items": [
+        "Dashboard personalizado de métricas clave",
+        "Cálculo automático de ROI por proceso",
+        "Reportes ejecutivos automatizados",
+        "Alertas de rendimiento y anomalías",
+        "Integración con herramientas existentes"
+      ]
+    },
+    "pricing": {
+      "title": "Precio y tiempo",
+      "subtitle": "Inversión mínima para máxima visibilidad",
+      "price": "600–1.000 €",
+      "priceNote": "pago único",
+      "deliveryTime": "1 semana",
+      "deliveryNote": "Setup rápido y configuración"
+    },
+    "target": {
+      "title": "Para quién es",
+      "content": "Ideal para: CEOs, founders y marketers que necesitan datos claros para decidir y medir el retorno de la automatización."
+    },
+    "cta": {
+      "title": "¿Listo para medir tu ROI?",
+      "content": "Solicita Synko ROI Board y obtén visibilidad total del rendimiento de tus automatizaciones. Datos claros para decisiones inteligentes.",
+      "buttonText": "Solicitar ROI Board",
+      "responseTime": "Respuesta en menos de 24h"
+    }
+  }
+}

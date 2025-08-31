@@ -1,0 +1,63 @@
+{
+  "id": "bookpay",
+  "badge": "SKU-004",
+  "title": "Synko Book&Pay",
+  "tagline": "Reservas + pagos en automático",
+  "hero": {
+    "time": "1-2 semanas",
+    "price": "Desde 900€"
+  },
+  "metadata": {
+    "title": "Synko Book&Pay | Automatización de reservas y pagos",
+    "description": "Sistema automático de reservas y cobros para negocios de citas y clases. Calendario y pagos que funcionan solos. Desde 900€."
+  },
+  "sections": {
+    "problem": {
+      "title": "El problema que resolvemos",
+      "content": "Los negocios que viven de citas o clases pierden tiempo gestionando calendarios manualmente, persiguiendo pagos y coordinando horarios. Los no-shows y pagos tardíos afectan el cash flow, mientras que la gestión manual consume horas valiosas cada día."
+    },
+    "solution": {
+      "title": "La solución que necesitas",
+      "content": "Synko Book&Pay automatiza completamente tu sistema de reservas y cobros. Los clientes reservan y pagan automáticamente, el calendario se gestiona solo y tú te enfocas en lo que realmente importa: ofrecer tu servicio."
+    },
+    "benefits": {
+      "title": "Beneficios clave",
+      "subtitle": "Reservas y cobros que funcionan sin ti",
+      "items": [
+        "Automatizar reservas y cobros completamente",
+        "Eliminar no-shows con pagos anticipados",
+        "Liberar tiempo de gestión administrativa",
+        "Mejorar cash flow con cobros automáticos"
+      ]
+    },
+    "includes": {
+      "title": "Qué incluye",
+      "subtitle": "Sistema completo de reservas y pagos",
+      "items": [
+        "Calendario de reservas automatizado",
+        "Procesamiento de pagos integrado",
+        "Recordatorios automáticos a clientes",
+        "Gestión de cancelaciones y reprogramaciones",
+        "Dashboard de control y métricas"
+      ]
+    },
+    "pricing": {
+      "title": "Precio y tiempo",
+      "subtitle": "Inversión que se recupera en el primer mes",
+      "price": "900–1.200 €",
+      "priceNote": "pago único",
+      "deliveryTime": "1-2 semanas",
+      "deliveryNote": "Desde la configuración inicial"
+    },
+    "target": {
+      "title": "Para quién es",
+      "content": "Ideal para: Negocios que viven de citas o clases y necesitan que el calendario y los cobros funcionen solos."
+    },
+    "cta": {
+      "title": "¿Listo para automatizar tus reservas?",
+      "content": "Solicita Synko Book&Pay y libérate de la gestión manual de citas y cobros. Reservas y pagos automáticos desde el día uno.",
+      "buttonText": "Solicitar Book&Pay",
+      "responseTime": "Respuesta en menos de 24h"
+    }
+  }
+}

@@ -25,12 +25,13 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Synko — IA y Automatización para crecer sin fricción",
+  title: "Synko — Automatización e IA que venden y ahorran tiempo",
   description:
-    "Orquestamos agentes, APIs y datos para convertir procesos en resultados medibles.",
+    "Instalamos automatizaciones listas para usar (e-commerce, reservas y soporte) que eliminan tareas repetitivas y aumentan ventas en 2–6 semanas.",
   openGraph: {
-    title: "Synko — IA y Automatización",
-    description: "Agentes, APIs y datos conectados orientados a ROI.",
+    title: "Synko — Automatización e IA con foco en ROI",
+    description:
+      "Productos Synko: Launch, StockCheck, Book&Pay, RAG Lite, ROI Board, Scale y Care Plan.",
     type: "website",
     url: process.env.NEXT_PUBLIC_SITE_URL || "https://synko.dev",
     siteName: "Synko",
@@ -81,18 +82,19 @@ function HomePage() {
                   E-commerce
                 </Badge>
                 <Badge className="rounded-full bg-[rgb(var(--color-highlight)/0.1)] px-3 py-1 text-sm font-medium text-[rgb(var(--color-highlight))]">
-                  Clínicas
+                  Reservas & Servicios
                 </Badge>
                 <Badge className="rounded-full bg-[rgb(var(--color-highlight)/0.1)] px-3 py-1 text-sm font-medium text-[rgb(var(--color-highlight))]">
-                  Gyms
+                  Soporte / Atención
                 </Badge>
               </div>
               <h1 className="font-display mb-6 text-3xl font-bold text-balance text-[rgb(var(--color-fg))] sm:text-4xl md:text-5xl lg:text-6xl">
-                Automatización e IA orquestadas para crecer sin fricción.
+                Automatización e IA que venden y ahorran tiempo.
               </h1>
               <p className="mb-8 text-lg text-balance text-[rgb(var(--color-muted))] sm:text-xl">
-                Agentes, APIs y datos conectados para convertir procesos en
-                resultados medibles.
+                Instalamos módulos Synko listos para usar que eliminan tareas
+                repetitivas, reducen errores y convierten procesos en resultados
+                medibles en 2–6 semanas.
               </p>
               <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
                 <Button
@@ -111,9 +113,7 @@ function HomePage() {
               <div className="flex h-48 w-full max-w-sm items-center justify-center rounded-2xl bg-gradient-to-br from-[rgb(var(--color-primary)/0.2)] to-[rgb(var(--color-highlight)/0.2)] sm:h-64 sm:max-w-md">
                 <div className="text-center text-[rgb(var(--color-muted))]">
                   <Bot size={48} className="mx-auto mb-3 sm:mb-4" />
-                  <p className="text-sm sm:text-base">
-                    Ilustración placeholder
-                  </p>
+                  <p className="text-sm sm:text-base">Automatizaciones Synko</p>
                 </div>
               </div>
             </div>
@@ -129,7 +129,8 @@ function HomePage() {
               Nuestros productos estrella
             </h2>
             <p className="text-lg text-balance text-[rgb(var(--color-muted))] sm:text-xl">
-              Productos Synko listos para instalar en tu negocio en 2–6 semanas.
+              Implementaciones enfocadas a ROI para e-commerce, reservas y
+              soporte.
             </p>
           </div>
           <div className="grid gap-6 sm:grid-cols-1 lg:grid-cols-3">
@@ -144,18 +145,18 @@ function HomePage() {
                     Synko Launch
                   </h3>
                   <p className="text-sm text-[rgb(var(--color-muted))]">
-                    SKU-001
+                    Setup completo en 2 semanas
                   </p>
                 </div>
               </div>
               <p className="mb-4 text-[rgb(var(--color-muted))]">
-                Setup completo en 2 semanas.
+                Ordena tus procesos y empieza a escalar sin apagar fuegos.
               </p>
               <ul className="mb-6 space-y-2 text-sm text-[rgb(var(--color-muted))]">
-                <li>• 1 agente IA personalizado</li>
-                <li>• 1 integración API</li>
-                <li>• Sistema de tracking</li>
-                <li>• Mini-dashboard de métricas</li>
+                <li>• Análisis de procesos y oportunidades</li>
+                <li>• Automatizaciones clave implementadas</li>
+                <li>• Integración con tus plataformas</li>
+                <li>• Formación al equipo + soporte 3 meses</li>
               </ul>
               <div className="mb-4">
                 <p className="text-lg font-bold text-[rgb(var(--color-fg))]">
@@ -178,18 +179,18 @@ function HomePage() {
                     Synko StockCheck
                   </h3>
                   <p className="text-sm text-[rgb(var(--color-muted))]">
-                    SKU-003
+                    Control de inventario en tiempo real
                   </p>
                 </div>
               </div>
               <p className="mb-4 text-[rgb(var(--color-muted))]">
-                Verifica stock y responde en tiempo real.
+                Evita ventas erróneas y roturas de stock que dañan tu marca.
               </p>
               <ul className="mb-6 space-y-2 text-sm text-[rgb(var(--color-muted))]">
-                <li>• Integración con Shopify/WooCommerce</li>
-                <li>• Respuestas automáticas enriquecidas</li>
-                <li>• Links de pago directo</li>
-                <li>• Notificaciones de stock bajo</li>
+                <li>• Monitoreo 24/7 del inventario</li>
+                <li>• Alertas de stock bajo y desincronizaciones</li>
+                <li>• Integración con proveedores y tu ecommerce</li>
+                <li>• Dashboard de control para el equipo</li>
               </ul>
               <div className="mb-4">
                 <p className="text-lg font-bold text-[rgb(var(--color-fg))]">
@@ -212,18 +213,18 @@ function HomePage() {
                     Synko Care Plan
                   </h3>
                   <p className="text-sm text-[rgb(var(--color-muted))]">
-                    SKU-007
+                    Optimización mensual continua
                   </p>
                 </div>
               </div>
               <p className="mb-4 text-[rgb(var(--color-muted))]">
-                Optimización continua.
+                Mantenemos tus automatizaciones en su mejor versión.
               </p>
               <ul className="mb-6 space-y-2 text-sm text-[rgb(var(--color-muted))]">
-                <li>• 8–16h/mes de mejoras</li>
-                <li>• Informes de ROI mensuales</li>
-                <li>• Roadmap de evolución</li>
-                <li>• Soporte prioritario</li>
+                <li>• 8–16 h/mes de mejoras y nuevas features</li>
+                <li>• Monitoreo y soporte prioritario</li>
+                <li>• Actualizaciones y hardening de procesos</li>
+                <li>• Reportes mensuales accionables</li>
               </ul>
               <div className="mb-4">
                 <p className="text-lg font-bold text-[rgb(var(--color-fg))]">
@@ -246,7 +247,7 @@ function HomePage() {
               Nuestro proceso de entrega
             </h2>
             <p className="text-lg text-balance text-[rgb(var(--color-muted))] sm:text-xl">
-              Metodología clara, de diagnóstico a mejora continua.
+              De diagnóstico a mejora continua, con objetivos y métricas claras.
             </p>
           </div>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
@@ -261,7 +262,7 @@ function HomePage() {
                 Diagnóstico
               </h3>
               <p className="text-sm text-[rgb(var(--color-muted))]">
-                Análisis inicial de objetivos y stack.
+                Objetivos de negocio, procesos y datos actuales.
               </p>
             </div>
             <div className="text-center">
@@ -275,7 +276,7 @@ function HomePage() {
                 Diseño
               </h3>
               <p className="text-sm text-[rgb(var(--color-muted))]">
-                Blueprint de flujos y datos.
+                Blueprint de flujos, integraciones y tracking.
               </p>
             </div>
             <div className="text-center">
@@ -289,7 +290,7 @@ function HomePage() {
                 Implementación
               </h3>
               <p className="text-sm text-[rgb(var(--color-muted))]">
-                ManyChat + n8n + APIs.
+                Integraciones, bots y automatizaciones listas para producir.
               </p>
             </div>
             <div className="text-center">
@@ -300,10 +301,10 @@ function HomePage() {
                 4
               </div>
               <h3 className="font-display mb-2 text-lg font-bold text-[rgb(var(--color-fg))]">
-                Métricas
+                Métricas y ROI
               </h3>
               <p className="text-sm text-[rgb(var(--color-muted))]">
-                Dashboards y reporting.
+                Dashboards y reporting orientados a decisión.
               </p>
             </div>
             <div className="text-center">
@@ -317,7 +318,7 @@ function HomePage() {
                 Mejora continua
               </h3>
               <p className="text-sm text-[rgb(var(--color-muted))]">
-                Iteraciones, optimización, soporte.
+                Iteración mensual, optimización y soporte.
               </p>
             </div>
           </div>
@@ -331,15 +332,12 @@ function HomePage() {
             <h2 className="font-display mb-4 text-2xl font-bold text-balance text-[rgb(var(--color-fg))] sm:text-3xl md:text-4xl">
               Resultados que importan
             </h2>
-            <p className="text-lg text-balance text-[rgb(var(--color-muted))] sm:text-xl">
-              Lo que medimos para demostrar impacto.
-            </p>
           </div>
           <Metrics
             metrics={[
               {
-                value: "+28",
-                label: "ventas/mes",
+                value: "+18%",
+                label: "conversión en checkout",
                 icon: <TrendingUp size={24} />,
               },
               {
@@ -348,9 +346,9 @@ function HomePage() {
                 icon: <Clock size={24} />,
               },
               {
-                value: "2.5s",
-                label: "P95 latencia de respuesta",
-                icon: <Zap size={24} />,
+                value: "–92%",
+                label: "errores de stock",
+                icon: <BarChart3 size={24} />,
               },
             ]}
           />
