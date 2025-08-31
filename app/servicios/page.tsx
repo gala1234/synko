@@ -3,8 +3,21 @@ import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
+import servicesData from "@/content/services.json";
+
+type Service = {
+  id: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  bullets: string[];
+  examples: string[];
+  technical: string[];
+};
 
 export default function ServiciosPage() {
+  const services = servicesData as Service[];
+
   return (
     <main>
       <Section padding="lg">
@@ -29,47 +42,56 @@ export default function ServiciosPage() {
       <Section padding="lg">
         <Container size="lg">
           <div className="grid gap-8 md:gap-12">
-            <Card className="p-8">
-              <h2 className="text-2xl font-display font-bold text-[var(--color-fg)] mb-4">
-                Agentes IA con datos propios
-              </h2>
-              <p className="text-[var(--color-muted)] mb-6">
-                Desarrollamos bots inteligentes que comprenden tu catálogo, políticas y FAQs para responder de forma contextual en Instagram, WhatsApp y tu sitio web.
-              </p>
-              <ul className="space-y-2 text-[var(--color-muted)]">
-                <li>• Entrenamiento con tus datos específicos</li>
-                <li>• Respuestas contextuales y precisas</li>
-                <li>• Integración multicanal</li>
-              </ul>
-            </Card>
+            {services.map((service) => (
+              <Card key={service.id} className="p-8">
+                <div className="mb-6">
+                  <h2 className="text-2xl font-display font-bold text-[var(--color-fg)] mb-2">
+                    {service.title}
+                  </h2>
+                  <p className="text-lg text-[var(--color-primary)] font-medium mb-4">
+                    {service.subtitle}
+                  </p>
+                  <p className="text-[var(--color-muted)] mb-6">
+                    {service.description}
+                  </p>
+                </div>
 
-            <Card className="p-8">
-              <h2 className="text-2xl font-display font-bold text-[var(--color-fg)] mb-4">
-                Integraciones avanzadas
-              </h2>
-              <p className="text-[var(--color-muted)] mb-6">
-                Conectamos tus sistemas existentes para automatizar consultas de stock, reservas y pagos de forma segura y eficiente.
-              </p>
-              <ul className="space-y-2 text-[var(--color-muted)]">
-                <li>• Consulta stock en tiempo real (Shopify, WooCommerce)</li>
-                <li>• Reservas automáticas en Google Calendar</li>
-                <li>• Pagos seguros vía Stripe</li>
-              </ul>
-            </Card>
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div>
+                    <h3 className="text-lg font-semibold text-[var(--color-fg)] mb-3">
+                      Características
+                    </h3>
+                    <ul className="space-y-2 text-[var(--color-muted)]">
+                       {service.bullets.map((bullet, index) => (
+                         <li key={`${service.id}-bullet-${index}`}>• {bullet}</li>
+                       ))}
+                     </ul>
+                  </div>
 
-            <Card className="p-8">
-              <h2 className="text-2xl font-display font-bold text-[var(--color-fg)] mb-4">
-                Automatización de ventas
-              </h2>
-              <p className="text-[var(--color-muted)] mb-6">
-                Optimizamos tu embudo de ventas desde la captación hasta la conversión, ahorrando horas de seguimiento manual.
-              </p>
-              <ul className="space-y-2 text-[var(--color-muted)]">
-                <li>• Leads automáticos desde ManyChat a CRM</li>
-                <li>• Campañas automatizadas y alertas</li>
-                <li>• Seguimiento inteligente de prospectos</li>
-              </ul>
-            </Card>
+                  <div>
+                    <h3 className="text-lg font-semibold text-[var(--color-fg)] mb-3">
+                      Casos de uso
+                    </h3>
+                    <ul className="space-y-2 text-[var(--color-muted)]">
+                       {service.examples.map((example, index) => (
+                         <li key={`${service.id}-example-${index}`}>• {example}</li>
+                       ))}
+                     </ul>
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg font-semibold text-[var(--color-fg)] mb-3">
+                      Implementación
+                    </h3>
+                    <ul className="space-y-2 text-[var(--color-muted)]">
+                       {service.technical.map((tech, index) => (
+                         <li key={`${service.id}-tech-${index}`}>• {tech}</li>
+                       ))}
+                     </ul>
+                  </div>
+                </div>
+              </Card>
+            ))}
           </div>
         </Container>
       </Section>

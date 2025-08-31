@@ -1,0 +1,107 @@
+[
+  {
+    "id": "a",
+    "title": "Agentes IA con datos propios",
+    "subtitle": "Respuestas inteligentes basadas en tu negocio.",
+    "description": "Bots conversacionales entrenados con FAQs, políticas, catálogo y tono de marca. No son respuestas predefinidas, sino agentes que entienden el contexto.",
+    "bullets": [
+      "Disponibles en Instagram, WhatsApp, Messenger o web.",
+      "Entrenamiento ligero con tus datos internos.",
+      "Supervisión humana opcional."
+    ],
+    "examples": [
+      "Soporte 24/7 con FAQs.",
+      "Pre-venta guiada en catálogo online.",
+      "Resolución de tickets frecuentes."
+    ],
+    "technical": [
+      "RAG ligero sobre base documental.",
+      "Validación de datos con Zod.",
+      "Logs y fallback humano para excepciones."
+    ]
+  },
+  {
+    "id": "b",
+    "title": "Integraciones avanzadas con APIs",
+    "subtitle": "Conexiones en tiempo real con tus sistemas clave.",
+    "description": "Sincronizamos bots con Shopify, WooCommerce, Google Calendar, Stripe y CRMs. Los bots ya no solo hablan: actúan.",
+    "bullets": [
+      "Consulta stock en Shopify/WooCommerce antes de cerrar la venta.",
+      "Reserva automática de citas en Google Calendar.",
+      "Pagos y facturación con Stripe sin salir del chat."
+    ],
+    "examples": [
+      "Bot que confirma disponibilidad de un producto y genera link de pago.",
+      "Agenda de citas con confirmación instantánea.",
+      "Gestión automática de leads en HubSpot o ActiveCampaign."
+    ],
+    "technical": [
+      "Flujos n8n + Webhooks.",
+      "Autenticación OAuth segura.",
+      "Manejo de errores y reintentos."
+    ]
+  },
+  {
+    "id": "c",
+    "title": "Automatización de ventas y marketing",
+    "subtitle": "Conecta chats, campañas y CRM para vender más.",
+    "description": "Automatizamos el ciclo de captación a remarketing. Los leads captados en ManyChat se segmentan automáticamente en tu CRM o email marketing.",
+    "bullets": [
+      "Captura leads en ManyChat y sincroniza con CRM.",
+      "Campañas de remarketing automáticas.",
+      "Alertas en Slack cuando hay intención de compra caliente."
+    ],
+    "examples": [
+      "Flujos para nutrir leads en HubSpot.",
+      "Secuencias automáticas en ActiveCampaign.",
+      "Remarketing dinámico en Meta Ads."
+    ],
+    "technical": [
+      "Integración directa con APIs de email y CRM.",
+      "Segmentación dinámica de leads.",
+      "Tracking de conversiones por canal."
+    ]
+  },
+  {
+    "id": "d",
+    "title": "Analítica y métricas personalizadas",
+    "subtitle": "Tus números, claros y en tiempo real.",
+    "description": "Creamos dashboards personalizados en Notion, Airtable o Looker Studio para medir conversaciones, leads, ventas y ROI.",
+    "bullets": [
+      "Embudo completo: conversaciones → leads → ventas.",
+      "Datos exportables a CSV/JSON.",
+      "Atribución de ventas a automatizaciones."
+    ],
+    "examples": [
+      "Dashboard con métricas de Instagram DMs.",
+      "Reporte mensual automático a directivos.",
+      "Embudo de conversión para e-commerce."
+    ],
+    "technical": [
+      "Panel embebible en web.",
+      "Integración con Data Studio/Notion/Airtable.",
+      "Actualización en tiempo real."
+    ]
+  },
+  {
+    "id": "e",
+    "title": "Mantenimiento y optimización continua",
+    "subtitle": "Tus sistemas siempre actualizados y mejorando.",
+    "description": "No montamos un bot y desaparecemos. Ofrecemos un plan mensual de mejora continua para garantizar ROI a largo plazo.",
+    "bullets": [
+      "Iteraciones mensuales con test A/B.",
+      "Monitoreo de caídas y latencias.",
+      "Roadmap de mejoras trimestral."
+    ],
+    "examples": [
+      "Ajustes de prompts en función del feedback.",
+      "Revisión de métricas y mejoras mensuales.",
+      "Soporte prioritario 24/7."
+    ],
+    "technical": [
+      "Testing de variantes de flujos.",
+      "Alertas automáticas ante errores.",
+      "Optimización continua de coste y velocidad."
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "launch",
+    "title": "Launch",
+    "priceRange": "1.800–2.400 €",
+    "description": "Setup inicial para poner tu negocio en automático en menos de 2 semanas.",
+    "bullets": [
+      "1 agente IA con datos propios",
+      "1 integración API (ej: Shopify, Woo, GCal)",
+      "Tracking básico de leads y ventas",
+      "Mini-dashboard inicial en Airtable o Notion"
+    ],
+    "notes": "Pago único. Ideal para empezar rápido."
+  },
+  {
+    "id": "scale",
+    "title": "Scale",
+    "priceRange": "3.000–4.500 €",
+    "description": "Escala tu sistema con más integraciones, datos enriquecidos y reporting completo.",
+    "bullets": [
+      "Todo lo de Launch",
+      "+2 integraciones API adicionales",
+      "RAG sobre base documental propia",
+      "Dashboard completo en Looker Studio",
+      "Campañas de remarketing automatizadas"
+    ],
+    "notes": "Pago único. Para empresas que ya tienen volumen."
+  },
+  {
+    "id": "care",
+    "title": "Care (Plan mensual)",
+    "priceRange": "350–700 €/mes",
+    "description": "Servicio recurrente de optimización y soporte. Ideal para crecer sin fricción.",
+    "bullets": [
+      "Soporte prioritario",
+      "8–16 horas de mejoras al mes",
+      "Informes mensuales de rendimiento y ROI",
+      "Revisión y roadmap de mejoras trimestral"
+    ],
+    "notes": "Suscripción mensual. Cancelable en cualquier momento."
+  }
+]
