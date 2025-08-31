@@ -109,8 +109,8 @@ function HomePage() {
                 </Button>
               </div>
             </div>
-            <div className="flex items-center justify-center animate-on-scroll delay-300">
-              <div className="flex h-48 w-full max-w-sm items-center justify-center rounded-2xl bg-gradient-to-br from-[rgb(var(--color-primary)/0.2)] to-[rgb(var(--color-highlight)/0.2)] sm:h-64 sm:max-w-md hover-scale">
+            <div className="animate-on-scroll flex items-center justify-center delay-300">
+              <div className="hover-scale flex h-48 w-full max-w-sm items-center justify-center rounded-2xl bg-gradient-to-br from-[rgb(var(--color-primary)/0.2)] to-[rgb(var(--color-highlight)/0.2)] sm:h-64 sm:max-w-md">
                 <div className="text-center text-[rgb(var(--color-muted))]">
                   <Bot size={48} className="mx-auto mb-3 sm:mb-4" />
                   <p className="text-sm sm:text-base">Automatizaciones Synko</p>
@@ -135,7 +135,7 @@ function HomePage() {
           </div>
           <div className="grid gap-6 sm:grid-cols-1 lg:grid-cols-3">
             {/* Synko Launch */}
-            <div className="rounded-2xl border border-[rgb(var(--color-border))] bg-[rgb(var(--color-surface))] p-6 animate-on-scroll delay-100 hover-lift">
+            <div className="animate-on-scroll hover-lift rounded-2xl border border-[rgb(var(--color-border))] bg-[rgb(var(--color-surface))] p-6 delay-100">
               <div className="mb-4 flex items-center gap-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[rgb(var(--color-primary))] text-white">
                   <Play size={20} />
@@ -169,7 +169,7 @@ function HomePage() {
             </div>
 
             {/* Synko StockCheck */}
-            <div className="rounded-2xl border border-[rgb(var(--color-border))] bg-[rgb(var(--color-surface))] p-6 animate-on-scroll delay-200 hover-lift">
+            <div className="animate-on-scroll hover-lift rounded-2xl border border-[rgb(var(--color-border))] bg-[rgb(var(--color-surface))] p-6 delay-200">
               <div className="mb-4 flex items-center gap-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[rgb(var(--color-primary))] text-white">
                   <BarChart3 size={20} />
@@ -203,7 +203,7 @@ function HomePage() {
             </div>
 
             {/* Synko Care Plan */}
-            <div className="rounded-2xl border border-[rgb(var(--color-border))] bg-[rgb(var(--color-surface))] p-6 animate-on-scroll delay-300 hover-lift">
+            <div className="animate-on-scroll hover-lift rounded-2xl border border-[rgb(var(--color-border))] bg-[rgb(var(--color-surface))] p-6 delay-300">
               <div className="mb-4 flex items-center gap-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[rgb(var(--color-primary))] text-white">
                   <RefreshCcw size={20} />
