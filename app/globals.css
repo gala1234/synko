@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* Tema/Tokens Synko (usados por toda la UI) */
+@theme {
+  /* Tipografías */
+  --font-family-sans: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans";
+  --font-family-display: Sora, var(--font-family-sans);
+
+  /* Paleta base */
+  --color-bg: #ffffff;
+  --color-fg: #0f172a;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+
+  /* Marca Synko */
+  --color-primary: #0ea5e9;
+  --color-primary-600: #0284c7;
+  --color-accent: #22c55e;
+  --color-accent-600: #16a34a;
+
+  /* Highlight moderno */
+  --color-highlight: #d946ef;
+  --color-highlight-600: #c026d3;
+
+  /* Elevación */
+  --box-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --box-shadow-md: 0 4px 12px -2px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.06);
+  --box-shadow-lg: 0 12px 32px -8px rgb(0 0 0 / 0.20);
+
+  /* Espaciado base 8px */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-12: 3rem;
+
+  /* Radios */
+  --border-radius-sm: 0.5rem;
+  --border-radius-md: 0.75rem;
+  --border-radius-lg: 1rem;
+  --border-radius-2xl: 1.5rem;
+}
+
+/* Modo oscuro basado en data-theme */
+:root[data-theme="dark"] {
+  --color-bg: #020617;
+  --color-fg: #f1f5f9;
+  --color-muted: #94a3b8;
+  --color-border: #1e293b;
+  --color-primary: #38bdf8;
+  --color-accent: #4ade80;
+  --color-highlight: #e879f9;
+}
+
+/* Helpers de color usando CSS vars + Tailwind utilities */
+:root {
+  color: var(--color-fg);
+  background: var(--color-bg);
+  font-family: var(--font-family-sans);
+}
