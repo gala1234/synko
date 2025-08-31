@@ -22,7 +22,7 @@ export function Badge({
     accent:
       "bg-[color-mix(in_srgb,_var(--color-accent)_12%,_transparent)] text-[var(--color-accent)]",
     highlight:
-      "bg-[color-mix(in_srgb,_var(--color-highlight)_12%,_transparent)] text-[var(--color-highlight)]",
+      "bg-[color-mix(in_srgb,_var(--color-highlight-text,_var(--color-highlight))_12%,_transparent)] text-[var(--color-highlight-text,_var(--color-highlight))]",
     outline: "border border-[var(--color-border)] text-[var(--color-fg)]",
   };
 
