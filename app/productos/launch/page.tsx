@@ -12,18 +12,20 @@ export default function LaunchPage() {
       <Section padding="lg">
         <Container size="lg">
           <div className="mx-auto max-w-4xl">
-            <div className="text-center mb-12">
+            <div className="mb-12 text-center">
               <Badge variant="highlight" size="md" className="mb-4">
                 SKU-001
               </Badge>
               <h1 className="font-display mb-4 text-4xl font-bold text-[rgb(var(--color-fg))] md:text-5xl">
                 Synko Launch
               </h1>
-              <p className="text-xl font-medium text-[rgb(var(--color-primary))] mb-6">
+              <p className="mb-6 text-xl font-medium text-[rgb(var(--color-primary))]">
                 Setup completo en 2 semanas
               </p>
-              <p className="text-lg text-[rgb(var(--color-muted))] max-w-2xl mx-auto">
-                Tu primer agente IA listo para funcionar. Incluye integración, tracking y dashboard para empezar a automatizar desde el día uno.
+              <p className="mx-auto max-w-2xl text-lg text-[rgb(var(--color-muted))]">
+                Tu primer agente IA listo para funcionar. Incluye integración,
+                tracking y dashboard para empezar a automatizar desde el día
+                uno.
               </p>
             </div>
           </div>
@@ -34,12 +36,15 @@ export default function LaunchPage() {
       <Section padding="md">
         <Container size="lg">
           <div className="mx-auto max-w-4xl">
-            <Card className="p-8 bg-[color-mix(in_srgb,_rgb(var(--color-accent))_5%,_transparent)]">
-              <h2 className="font-display text-2xl font-bold text-[rgb(var(--color-fg))] mb-4">
+            <Card className="bg-[color-mix(in_srgb,_rgb(var(--color-accent))_5%,_transparent)] p-8">
+              <h2 className="font-display mb-4 text-2xl font-bold text-[rgb(var(--color-fg))]">
                 ¿Qué problema resuelve?
               </h2>
               <p className="text-lg text-[rgb(var(--color-muted))]">
-                Las empresas pierden tiempo en tareas repetitivas que podrían automatizarse, pero no saben por dónde empezar o les parece muy complejo. Synko Launch es tu punto de entrada perfecto al mundo de la automatización IA.
+                Las empresas pierden tiempo en tareas repetitivas que podrían
+                automatizarse, pero no saben por dónde empezar o les parece muy
+                complejo. Synko Launch es tu punto de entrada perfecto al mundo
+                de la automatización IA.
               </p>
             </Card>
           </div>
@@ -50,12 +55,12 @@ export default function LaunchPage() {
       <Section padding="md">
         <Container size="lg">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-display text-3xl font-bold text-[rgb(var(--color-fg))] mb-8 text-center">
+            <h2 className="font-display mb-8 text-center text-3xl font-bold text-[rgb(var(--color-fg))]">
               Qué incluye tu Synko Launch
             </h2>
             <div className="grid gap-6 md:grid-cols-2">
               <Card className="p-6">
-                <h3 className="font-semibold text-lg text-[rgb(var(--color-fg))] mb-3">
+                <h3 className="mb-3 text-lg font-semibold text-[rgb(var(--color-fg))]">
                   🤖 1 agente IA personalizado
                 </h3>
                 <p className="text-[rgb(var(--color-muted))]">
@@ -63,7 +68,7 @@ export default function LaunchPage() {
                 </p>
               </Card>
               <Card className="p-6">
-                <h3 className="font-semibold text-lg text-[rgb(var(--color-fg))] mb-3">
+                <h3 className="mb-3 text-lg font-semibold text-[rgb(var(--color-fg))]">
                   🔗 1 integración API principal
                 </h3>
                 <p className="text-[rgb(var(--color-muted))]">
@@ -71,7 +76,7 @@ export default function LaunchPage() {
                 </p>
               </Card>
               <Card className="p-6">
-                <h3 className="font-semibold text-lg text-[rgb(var(--color-fg))] mb-3">
+                <h3 className="mb-3 text-lg font-semibold text-[rgb(var(--color-fg))]">
                   📊 Sistema de tracking básico
                 </h3>
                 <p className="text-[rgb(var(--color-muted))]">
@@ -79,7 +84,7 @@ export default function LaunchPage() {
                 </p>
               </Card>
               <Card className="p-6">
-                <h3 className="font-semibold text-lg text-[rgb(var(--color-fg))] mb-3">
+                <h3 className="mb-3 text-lg font-semibold text-[rgb(var(--color-fg))]">
                   📈 Mini-dashboard de métricas
                 </h3>
                 <p className="text-[rgb(var(--color-muted))]">
@@ -87,7 +92,7 @@ export default function LaunchPage() {
                 </p>
               </Card>
               <Card className="p-6">
-                <h3 className="font-semibold text-lg text-[rgb(var(--color-fg))] mb-3">
+                <h3 className="mb-3 text-lg font-semibold text-[rgb(var(--color-fg))]">
                   📚 Documentación completa
                 </h3>
                 <p className="text-[rgb(var(--color-muted))]">
@@ -95,7 +100,7 @@ export default function LaunchPage() {
                 </p>
               </Card>
               <Card className="p-6">
-                <h3 className="font-semibold text-lg text-[rgb(var(--color-fg))] mb-3">
+                <h3 className="mb-3 text-lg font-semibold text-[rgb(var(--color-fg))]">
                   🛠️ 2 semanas de soporte incluido
                 </h3>
                 <p className="text-[rgb(var(--color-muted))]">
@@ -113,7 +118,7 @@ export default function LaunchPage() {
           <div className="mx-auto max-w-4xl">
             <div className="grid gap-8 md:grid-cols-3">
               <Card className="p-6 text-center">
-                <h3 className="font-display text-xl font-bold text-[rgb(var(--color-fg))] mb-2">
+                <h3 className="font-display mb-2 text-xl font-bold text-[rgb(var(--color-fg))]">
                   ⏱️ Tiempo de entrega
                 </h3>
                 <p className="text-2xl font-bold text-[rgb(var(--color-primary))]">
@@ -121,7 +126,7 @@ export default function LaunchPage() {
                 </p>
               </Card>
               <Card className="p-6 text-center">
-                <h3 className="font-display text-xl font-bold text-[rgb(var(--color-fg))] mb-2">
+                <h3 className="font-display mb-2 text-xl font-bold text-[rgb(var(--color-fg))]">
                   💰 Precio
                 </h3>
                 <p className="text-2xl font-bold text-[rgb(var(--color-primary))]">
@@ -129,11 +134,12 @@ export default function LaunchPage() {
                 </p>
               </Card>
               <Card className="p-6 text-center">
-                <h3 className="font-display text-xl font-bold text-[rgb(var(--color-fg))] mb-2">
+                <h3 className="font-display mb-2 text-xl font-bold text-[rgb(var(--color-fg))]">
                   🎯 Caso de uso
                 </h3>
                 <p className="text-[rgb(var(--color-muted))]">
-                  Perfecto para empresas que quieren automatizar su primer proceso sin riesgo
+                  Perfecto para empresas que quieren automatizar su primer
+                  proceso sin riesgo
                 </p>
               </Card>
             </div>
@@ -145,17 +151,16 @@ export default function LaunchPage() {
       <Section padding="md">
         <Container size="lg">
           <div className="mx-auto max-w-4xl">
-            <Card className="p-8 bg-[color-mix(in_srgb,_rgb(var(--color-primary))_5%,_transparent)]">
-              <h2 className="font-display text-2xl font-bold text-[rgb(var(--color-fg))] mb-4">
+            <Card className="bg-[color-mix(in_srgb,_rgb(var(--color-primary))_5%,_transparent)] p-8">
+              <h2 className="font-display mb-4 text-2xl font-bold text-[rgb(var(--color-fg))]">
                 📈 Caso real vinculado
               </h2>
-              <p className="text-lg text-[rgb(var(--color-muted))] mb-6">
-                Ve cómo implementamos Synko Launch en un ecommerce real y los resultados obtenidos en las primeras 2 semanas.
+              <p className="mb-6 text-lg text-[rgb(var(--color-muted))]">
+                Ve cómo implementamos Synko Launch en un ecommerce real y los
+                resultados obtenidos en las primeras 2 semanas.
               </p>
               <Link href="/casos/ecommerce">
-                <Button variant="primary">
-                  Ver caso de estudio
-                </Button>
+                <Button variant="primary">Ver caso de estudio</Button>
               </Link>
             </Card>
           </div>
@@ -166,10 +171,10 @@ export default function LaunchPage() {
       <Section padding="lg">
         <Container size="lg">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="font-display text-3xl font-bold text-[rgb(var(--color-fg))] mb-6">
+            <h2 className="font-display mb-6 text-3xl font-bold text-[rgb(var(--color-fg))]">
               ¿Listo para tu primer agente IA?
             </h2>
-            <p className="text-lg text-[rgb(var(--color-muted))] mb-8">
+            <p className="mb-8 text-lg text-[rgb(var(--color-muted))]">
               Solicita Synko Launch y empieza a automatizar en 2 semanas.
             </p>
             <Link href="/contacto">
@@ -186,5 +191,6 @@ export default function LaunchPage() {
 
 export const metadata = {
   title: "Synko Launch | Tu primer agente IA en 2 semanas",
-  description: "Setup completo de automatización IA en 2 semanas. Incluye agente personalizado, integración API y dashboard. Desde 1.800€.",
+  description:
+    "Setup completo de automatización IA en 2 semanas. Incluye agente personalizado, integración API y dashboard. Desde 1.800€.",
 };

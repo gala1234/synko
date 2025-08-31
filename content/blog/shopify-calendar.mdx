@@ -134,9 +134,9 @@ const order = $input.first().json;
 const lineItems = order.line_items;
 
 // Buscar productos que requieren cita
-const appointmentItems = lineItems.filter(item => 
-  item.properties?.some(prop => 
-    prop.name === 'requires_appointment' && prop.value === 'true'
+const appointmentItems = lineItems.filter((item) =>
+  item.properties?.some(
+    (prop) => prop.name === "requires_appointment" && prop.value === "true"
   )
 );
 
@@ -146,14 +146,16 @@ if (appointmentItems.length > 0) {
       name: `${order.customer.first_name} ${order.customer.last_name}`,
       email: order.customer.email,
       phone: order.customer.phone,
-      timezone: order.customer.default_address?.country_code || 'ES'
+      timezone: order.customer.default_address?.country_code || "ES",
     },
     appointment: {
-      type: appointmentItems[0].properties.find(p => p.name === 'appointment_type')?.value,
+      type: appointmentItems[0].properties.find(
+        (p) => p.name === "appointment_type"
+      )?.value,
       duration: 60, // minutos
-      notes: `Pedido #${order.order_number} - ${appointmentItems.map(i => i.title).join(', ')}`
+      notes: `Pedido #${order.order_number} - ${appointmentItems.map((i) => i.title).join(", ")}`,
     },
-    order_id: order.id
+    order_id: order.id,
   };
 }
 
@@ -202,19 +204,29 @@ return null; // No requiere cita
 ## Troubleshooting común
 
 ### Problemas de zona horaria
+
 ```javascript
 // Convertir a zona horaria del cliente
-const moment = require('moment-timezone');
-const clientTimezone = order.customer.default_address?.country_code === 'ES' ? 'Europe/Madrid' : 'UTC';
-const appointmentTime = moment().tz(clientTimezone).add(2, 'days').hour(10).minute(0);
+const moment = require("moment-timezone");
+const clientTimezone =
+  order.customer.default_address?.country_code === "ES"
+    ? "Europe/Madrid"
+    : "UTC";
+const appointmentTime = moment()
+  .tz(clientTimezone)
+  .add(2, "days")
+  .hour(10)
+  .minute(0);
 ```
 
 ### Conflictos de disponibilidad
+
 - Implementar sistema de cola
 - Ofrecer múltiples opciones
 - Escalación automática a manager
 
 ### Cancelaciones de último momento
+
 - Política clara de cancelación
 - Automatización de reagendamiento
 - Compensación automática (descuentos)

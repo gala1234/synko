@@ -32,7 +32,9 @@ export function FeatureCard({
             key={bullet}
             className="flex items-start text-[rgb(var(--color-muted))]"
           >
-            <span className="mt-1 mr-2 text-[rgb(var(--color-highlight))]">•</span>
+            <span className="mt-1 mr-2 text-[rgb(var(--color-highlight))]">
+              •
+            </span>
             <span>{bullet}</span>
           </li>
         ))}

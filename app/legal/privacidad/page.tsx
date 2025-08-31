@@ -84,7 +84,8 @@ export default function PrivacidadPage() {
                     </li>
                     <li>
                       <strong>Entrega de productos:</strong> desarrollar y
-                      entregar los productos Synko de automatización e IA contratados.
+                      entregar los productos Synko de automatización e IA
+                      contratados.
                     </li>
                     <li>
                       <strong>Comunicación comercial:</strong> enviarle
@@ -107,8 +108,8 @@ export default function PrivacidadPage() {
                   <p>El tratamiento de sus datos se basa en:</p>
                   <ul className="list-disc space-y-2 pl-6">
                     <li>
-                      <strong>Ejecución de un contrato:</strong> para la
-                      entrega de nuestros productos.
+                      <strong>Ejecución de un contrato:</strong> para la entrega
+                      de nuestros productos.
                     </li>
                     <li>
                       <strong>Interés legítimo:</strong> para responder a sus

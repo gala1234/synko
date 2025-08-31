@@ -10,19 +10,19 @@
 
   /* Colores base */
   --color-bg: 255 255 255;
-  --color-fg: 15 23 42;       /* slate-900 */
+  --color-fg: 15 23 42; /* slate-900 */
   --color-muted: 100 116 139; /* slate-500 */
-  --color-border: 226 232 240;/* slate-200 */
+  --color-border: 226 232 240; /* slate-200 */
 
   /* Marca */
-  --color-primary: 14 165 233;      /* sky-500 */
-  --color-primary-600: 2 132 199;   /* sky-600 */
-  --color-accent: 34 197 94;        /* green-500 */
-  --color-accent-600: 22 163 74;    /* green-600 */
+  --color-primary: 14 165 233; /* sky-500 */
+  --color-primary-600: 2 132 199; /* sky-600 */
+  --color-accent: 34 197 94; /* green-500 */
+  --color-accent-600: 22 163 74; /* green-600 */
 
   /* Highlight moderno (fucsia) */
-  --color-highlight: 217 70 239;    /* fuchsia-500 */
-  --color-highlight-600: 192 38 211;/* fuchsia-600 */
+  --color-highlight: 217 70 239; /* fuchsia-500 */
+  --color-highlight-600: 192 38 211; /* fuchsia-600 */
 
   /* Elevación */
   --box-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -48,12 +48,12 @@
 
 /* Modo oscuro basado en data-theme */
 :root[data-theme="dark"] {
-  --color-bg: 2 6 23;     /* slate-950 */
+  --color-bg: 2 6 23; /* slate-950 */
   --color-fg: 241 245 249; /* slate-100 */
   --color-muted: 148 163 184; /* slate-400 */
-  --color-border: 30 41 59;   /* slate-800 */
-  --color-primary: 56 189 248;   /* sky-400 */
-  --color-accent: 74 222 128;    /* green-400 */
+  --color-border: 30 41 59; /* slate-800 */
+  --color-primary: 56 189 248; /* sky-400 */
+  --color-accent: 74 222 128; /* green-400 */
   --color-highlight: 232 121 249; /* fuchsia-400 */
   --color-highlight-text: 240 171 252; /* fuchsia-300 */
 }
@@ -151,7 +151,9 @@ img {
 /* Animaciones suaves por defecto (respetando prefers-reduced-motion) */
 @media (prefers-reduced-motion: no-preference) {
   * {
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-property:
+      color, background-color, border-color, text-decoration-color, fill,
+      stroke, opacity, box-shadow, transform, filter, backdrop-filter;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
   }
@@ -163,7 +165,7 @@ img {
     --color-border: 0 0 0;
     --color-muted: 0 0 0;
   }
-  
+
   :root[data-theme="dark"] {
     --color-border: 255 255 255;
     --color-muted: 255 255 255;

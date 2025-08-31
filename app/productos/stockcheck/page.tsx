@@ -12,18 +12,19 @@ export default function StockCheckPage() {
       <Section padding="lg">
         <Container size="lg">
           <div className="mx-auto max-w-4xl">
-            <div className="text-center mb-12">
+            <div className="mb-12 text-center">
               <Badge variant="highlight" size="md" className="mb-4">
                 SKU-003
               </Badge>
               <h1 className="font-display mb-4 text-4xl font-bold text-[rgb(var(--color-fg))] md:text-5xl">
                 Synko StockCheck
               </h1>
-              <p className="text-xl font-medium text-[rgb(var(--color-primary))] mb-6">
+              <p className="mb-6 text-xl font-medium text-[rgb(var(--color-primary))]">
                 Verifica stock y responde en tiempo real
               </p>
-              <p className="text-lg text-[rgb(var(--color-muted))] max-w-2xl mx-auto">
-                Agente que consulta tu inventario en tiempo real y responde a clientes con disponibilidad y links de pago directos.
+              <p className="mx-auto max-w-2xl text-lg text-[rgb(var(--color-muted))]">
+                Agente que consulta tu inventario en tiempo real y responde a
+                clientes con disponibilidad y links de pago directos.
               </p>
             </div>
           </div>
@@ -34,12 +35,14 @@ export default function StockCheckPage() {
       <Section padding="md">
         <Container size="lg">
           <div className="mx-auto max-w-4xl">
-            <Card className="p-8 bg-[color-mix(in_srgb,_rgb(var(--color-accent))_5%,_transparent)]">
-              <h2 className="font-display text-2xl font-bold text-[rgb(var(--color-fg))] mb-4">
+            <Card className="bg-[color-mix(in_srgb,_rgb(var(--color-accent))_5%,_transparent)] p-8">
+              <h2 className="font-display mb-4 text-2xl font-bold text-[rgb(var(--color-fg))]">
                 ¿Qué problema resuelve?
               </h2>
               <p className="text-lg text-[rgb(var(--color-muted))]">
-                Los clientes abandonan porque no saben si hay stock disponible o el proceso de compra es lento. StockCheck elimina la fricción entre la consulta y la compra.
+                Los clientes abandonan porque no saben si hay stock disponible o
+                el proceso de compra es lento. StockCheck elimina la fricción
+                entre la consulta y la compra.
               </p>
             </Card>
           </div>
@@ -50,12 +53,12 @@ export default function StockCheckPage() {
       <Section padding="md">
         <Container size="lg">
           <div className="mx-auto max-w-4xl">
-            <h2 className="font-display text-3xl font-bold text-[rgb(var(--color-fg))] mb-8 text-center">
+            <h2 className="font-display mb-8 text-center text-3xl font-bold text-[rgb(var(--color-fg))]">
               Qué incluye tu Synko StockCheck
             </h2>
             <div className="grid gap-6 md:grid-cols-2">
               <Card className="p-6">
-                <h3 className="font-semibold text-lg text-[rgb(var(--color-fg))] mb-3">
+                <h3 className="mb-3 text-lg font-semibold text-[rgb(var(--color-fg))]">
                   🛒 Integración con Shopify/WooCommerce
                 </h3>
                 <p className="text-[rgb(var(--color-muted))]">
@@ -63,7 +66,7 @@ export default function StockCheckPage() {
                 </p>
               </Card>
               <Card className="p-6">
-                <h3 className="font-semibold text-lg text-[rgb(var(--color-fg))] mb-3">
+                <h3 className="mb-3 text-lg font-semibold text-[rgb(var(--color-fg))]">
                   ⚡ Consultas de stock en tiempo real
                 </h3>
                 <p className="text-[rgb(var(--color-muted))]">
@@ -71,7 +74,7 @@ export default function StockCheckPage() {
                 </p>
               </Card>
               <Card className="p-6">
-                <h3 className="font-semibold text-lg text-[rgb(var(--color-fg))] mb-3">
+                <h3 className="mb-3 text-lg font-semibold text-[rgb(var(--color-fg))]">
                   🖼️ Respuestas enriquecidas con imágenes
                 </h3>
                 <p className="text-[rgb(var(--color-muted))]">
@@ -79,7 +82,7 @@ export default function StockCheckPage() {
                 </p>
               </Card>
               <Card className="p-6">
-                <h3 className="font-semibold text-lg text-[rgb(var(--color-fg))] mb-3">
+                <h3 className="mb-3 text-lg font-semibold text-[rgb(var(--color-fg))]">
                   💳 Links de pago directo
                 </h3>
                 <p className="text-[rgb(var(--color-muted))]">
@@ -87,7 +90,7 @@ export default function StockCheckPage() {
                 </p>
               </Card>
               <Card className="p-6">
-                <h3 className="font-semibold text-lg text-[rgb(var(--color-fg))] mb-3">
+                <h3 className="mb-3 text-lg font-semibold text-[rgb(var(--color-fg))]">
                   🔔 Notificaciones de stock bajo
                 </h3>
                 <p className="text-[rgb(var(--color-muted))]">
@@ -105,7 +108,7 @@ export default function StockCheckPage() {
           <div className="mx-auto max-w-4xl">
             <div className="grid gap-8 md:grid-cols-3">
               <Card className="p-6 text-center">
-                <h3 className="font-display text-xl font-bold text-[rgb(var(--color-fg))] mb-2">
+                <h3 className="font-display mb-2 text-xl font-bold text-[rgb(var(--color-fg))]">
                   ⏱️ Tiempo de entrega
                 </h3>
                 <p className="text-2xl font-bold text-[rgb(var(--color-primary))]">
@@ -113,7 +116,7 @@ export default function StockCheckPage() {
                 </p>
               </Card>
               <Card className="p-6 text-center">
-                <h3 className="font-display text-xl font-bold text-[rgb(var(--color-fg))] mb-2">
+                <h3 className="font-display mb-2 text-xl font-bold text-[rgb(var(--color-fg))]">
                   💰 Precio
                 </h3>
                 <p className="text-2xl font-bold text-[rgb(var(--color-primary))]">
@@ -121,11 +124,12 @@ export default function StockCheckPage() {
                 </p>
               </Card>
               <Card className="p-6 text-center">
-                <h3 className="font-display text-xl font-bold text-[rgb(var(--color-fg))] mb-2">
+                <h3 className="font-display mb-2 text-xl font-bold text-[rgb(var(--color-fg))]">
                   🎯 Caso de uso
                 </h3>
                 <p className="text-[rgb(var(--color-muted))]">
-                  Perfecto para ecommerce que quieren reducir abandono de carrito
+                  Perfecto para ecommerce que quieren reducir abandono de
+                  carrito
                 </p>
               </Card>
             </div>
@@ -137,17 +141,16 @@ export default function StockCheckPage() {
       <Section padding="md">
         <Container size="lg">
           <div className="mx-auto max-w-4xl">
-            <Card className="p-8 bg-[color-mix(in_srgb,_rgb(var(--color-primary))_5%,_transparent)]">
-              <h2 className="font-display text-2xl font-bold text-[rgb(var(--color-fg))] mb-4">
+            <Card className="bg-[color-mix(in_srgb,_rgb(var(--color-primary))_5%,_transparent)] p-8">
+              <h2 className="font-display mb-4 text-2xl font-bold text-[rgb(var(--color-fg))]">
                 📈 Caso real vinculado
               </h2>
-              <p className="text-lg text-[rgb(var(--color-muted))] mb-6">
-                Ve cómo StockCheck redujo el abandono de carrito en un 35% en un ecommerce de moda.
+              <p className="mb-6 text-lg text-[rgb(var(--color-muted))]">
+                Ve cómo StockCheck redujo el abandono de carrito en un 35% en un
+                ecommerce de moda.
               </p>
               <Link href="/casos/ecommerce">
-                <Button variant="primary">
-                  Ver caso de estudio
-                </Button>
+                <Button variant="primary">Ver caso de estudio</Button>
               </Link>
             </Card>
           </div>
@@ -158,10 +161,10 @@ export default function StockCheckPage() {
       <Section padding="lg">
         <Container size="lg">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="font-display text-3xl font-bold text-[rgb(var(--color-fg))] mb-6">
+            <h2 className="font-display mb-6 text-3xl font-bold text-[rgb(var(--color-fg))]">
               ¿Listo para reducir el abandono de carrito?
             </h2>
-            <p className="text-lg text-[rgb(var(--color-muted))] mb-8">
+            <p className="mb-8 text-lg text-[rgb(var(--color-muted))]">
               Solicita Synko StockCheck y convierte más visitantes en ventas.
             </p>
             <Link href="/contacto">
@@ -178,5 +181,6 @@ export default function StockCheckPage() {
 
 export const metadata = {
   title: "Synko StockCheck | Verifica stock en tiempo real",
-  description: "Agente IA que consulta inventario y responde con disponibilidad y links de pago. Reduce abandono de carrito. Desde 900€.",
+  description:
+    "Agente IA que consulta inventario y responde con disponibilidad y links de pago. Reduce abandono de carrito. Desde 900€.",
 };

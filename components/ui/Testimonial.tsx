@@ -29,7 +29,9 @@ export function Testimonial({
         </p>
       </div>
       <div className="border-t border-[rgb(var(--color-border))] pt-4">
-        <div className="font-semibold text-[rgb(var(--color-fg))]">{author}</div>
+        <div className="font-semibold text-[rgb(var(--color-fg))]">
+          {author}
+        </div>
         <div className="text-sm text-[rgb(var(--color-muted))]">{role}</div>
       </div>
     </Card>

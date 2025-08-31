@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const blogDir = path.join(process.cwd(), "content/blog");
   const blogFiles = fs.readdirSync(blogDir);
   const blogPosts = blogFiles
-    .filter(file => file.endsWith('.mdx'))
+    .filter((file) => file.endsWith(".mdx"))
     .map((file) => {
       const source = fs.readFileSync(path.join(blogDir, file), "utf-8");
       const { data } = matter(source);

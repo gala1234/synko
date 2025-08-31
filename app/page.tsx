@@ -95,7 +95,11 @@ function HomePage() {
                 resultados medibles.
               </p>
               <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
-                <Button size="lg" variant="primary" className="w-full sm:w-auto">
+                <Button
+                  size="lg"
+                  variant="primary"
+                  className="w-full sm:w-auto"
+                >
                   <Link href="/contacto">Solicitar propuesta</Link>
                 </Button>
                 <Button size="lg" variant="ghost" className="w-full sm:w-auto">
@@ -107,7 +111,9 @@ function HomePage() {
               <div className="flex h-48 w-full max-w-sm items-center justify-center rounded-2xl bg-gradient-to-br from-[rgb(var(--color-primary)/0.2)] to-[rgb(var(--color-highlight)/0.2)] sm:h-64 sm:max-w-md">
                 <div className="text-center text-[rgb(var(--color-muted))]">
                   <Bot size={48} className="mx-auto mb-3 sm:mb-4" />
-                  <p className="text-sm sm:text-base">Ilustración placeholder</p>
+                  <p className="text-sm sm:text-base">
+                    Ilustración placeholder
+                  </p>
                 </div>
               </div>
             </div>
@@ -137,7 +143,9 @@ function HomePage() {
                   <h3 className="font-display text-lg font-bold text-[rgb(var(--color-fg))]">
                     Synko Launch
                   </h3>
-                  <p className="text-sm text-[rgb(var(--color-muted))]">SKU-001</p>
+                  <p className="text-sm text-[rgb(var(--color-muted))]">
+                    SKU-001
+                  </p>
                 </div>
               </div>
               <p className="mb-4 text-[rgb(var(--color-muted))]">
@@ -150,7 +158,9 @@ function HomePage() {
                 <li>• Mini-dashboard de métricas</li>
               </ul>
               <div className="mb-4">
-                <p className="text-lg font-bold text-[rgb(var(--color-fg))]">1.800–2.400 €</p>
+                <p className="text-lg font-bold text-[rgb(var(--color-fg))]">
+                  1.800–2.400 €
+                </p>
               </div>
               <Button className="w-full" variant="primary">
                 <Link href="/productos/launch">Quiero este producto</Link>
@@ -167,7 +177,9 @@ function HomePage() {
                   <h3 className="font-display text-lg font-bold text-[rgb(var(--color-fg))]">
                     Synko StockCheck
                   </h3>
-                  <p className="text-sm text-[rgb(var(--color-muted))]">SKU-003</p>
+                  <p className="text-sm text-[rgb(var(--color-muted))]">
+                    SKU-003
+                  </p>
                 </div>
               </div>
               <p className="mb-4 text-[rgb(var(--color-muted))]">
@@ -180,7 +192,9 @@ function HomePage() {
                 <li>• Notificaciones de stock bajo</li>
               </ul>
               <div className="mb-4">
-                <p className="text-lg font-bold text-[rgb(var(--color-fg))]">900–1.200 €</p>
+                <p className="text-lg font-bold text-[rgb(var(--color-fg))]">
+                  900–1.200 €
+                </p>
               </div>
               <Button className="w-full" variant="primary">
                 <Link href="/productos/stockcheck">Quiero este producto</Link>
@@ -197,7 +211,9 @@ function HomePage() {
                   <h3 className="font-display text-lg font-bold text-[rgb(var(--color-fg))]">
                     Synko Care Plan
                   </h3>
-                  <p className="text-sm text-[rgb(var(--color-muted))]">SKU-007</p>
+                  <p className="text-sm text-[rgb(var(--color-muted))]">
+                    SKU-007
+                  </p>
                 </div>
               </div>
               <p className="mb-4 text-[rgb(var(--color-muted))]">
@@ -210,7 +226,9 @@ function HomePage() {
                 <li>• Soporte prioritario</li>
               </ul>
               <div className="mb-4">
-                <p className="text-lg font-bold text-[rgb(var(--color-fg))]">350–700 €/mes</p>
+                <p className="text-lg font-bold text-[rgb(var(--color-fg))]">
+                  350–700 €/mes
+                </p>
               </div>
               <Button className="w-full" variant="primary">
                 <Link href="/productos/care">Quiero este producto</Link>

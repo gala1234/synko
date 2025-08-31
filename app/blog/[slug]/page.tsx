@@ -9,34 +9,35 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 interface BlogPostProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export async function generateStaticParams() {
   const dir = path.join(process.cwd(), "content/blog");
   const files = fs.readdirSync(dir);
-  
+
   return files
-    .filter(file => file.endsWith('.mdx'))
+    .filter((file) => file.endsWith(".mdx"))
     .map((file) => ({
       slug: file.replace(/\.mdx$/, ""),
     }));
 }
 
 export async function generateMetadata({ params }: BlogPostProps) {
-  const filePath = path.join(process.cwd(), "content/blog", `${params.slug}.mdx`);
-  
+  const { slug } = await params;
+  const filePath = path.join(process.cwd(), "content/blog", `${slug}.mdx`);
+
   if (!fs.existsSync(filePath)) {
     return {
       title: "Post no encontrado",
     };
   }
-  
+
   const source = fs.readFileSync(filePath, "utf-8");
   const { data } = matter(source);
-  
+
   return {
     title: `${data.title} | Synko Blog`,
     description: data.summary,
@@ -51,21 +52,22 @@ export async function generateMetadata({ params }: BlogPostProps) {
 }
 
 export default async function BlogPost({ params }: BlogPostProps) {
-  const filePath = path.join(process.cwd(), "content/blog", `${params.slug}.mdx`);
-  
+  const { slug } = await params;
+  const filePath = path.join(process.cwd(), "content/blog", `${slug}.mdx`);
+
   if (!fs.existsSync(filePath)) {
     notFound();
   }
-  
+
   const source = fs.readFileSync(filePath, "utf-8");
   const { content, data } = matter(source);
-  
+
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
-    return date.toLocaleDateString('es-ES', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
+    return date.toLocaleDateString("es-ES", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
     });
   };
 
@@ -74,51 +76,52 @@ export default async function BlogPost({ params }: BlogPostProps) {
       <Section padding="lg">
         <Container size="md">
           <div className="mb-8">
-            <Link 
+            <Link
               href="/blog"
-              className="text-[rgb(var(--color-primary))] hover:underline mb-6 inline-block"
+              className="mb-6 inline-block text-[rgb(var(--color-primary))] hover:underline"
             >
               ← Volver al blog
             </Link>
-            
+
             <div className="mb-6">
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="mb-4 flex flex-wrap gap-2">
                 {data.tags?.map((tag: string) => (
                   <Badge key={tag} variant="accent" size="sm">
                     {tag}
                   </Badge>
                 ))}
               </div>
-              <p className="text-sm text-[rgb(var(--color-muted))] mb-4">
+              <p className="mb-4 text-sm text-[rgb(var(--color-muted))]">
                 {formatDate(data.date)}
               </p>
             </div>
-            
-            <h1 className="font-display text-4xl md:text-5xl font-bold text-[rgb(var(--color-fg))] mb-6">
+
+            <h1 className="font-display mb-6 text-4xl font-bold text-[rgb(var(--color-fg))] md:text-5xl">
               {data.title}
             </h1>
-            
-            <p className="text-xl text-[rgb(var(--color-muted))] leading-relaxed">
+
+            <p className="text-xl leading-relaxed text-[rgb(var(--color-muted))]">
               {data.summary}
             </p>
           </div>
-          
+
           <article className="prose prose-slate dark:prose-invert max-w-none">
-            {/* @ts-expect-error Server Component */}
+            {/* @ts-ignore */}
             <MDXRemote source={content} />
           </article>
-          
-          <div className="mt-12 pt-8 border-t border-[rgb(var(--color-border))]">
+
+          <div className="mt-12 border-t border-[rgb(var(--color-border))] pt-8">
             <div className="text-center">
-              <h3 className="text-xl font-semibold mb-4 text-[rgb(var(--color-fg))]">
+              <h3 className="mb-4 text-xl font-semibold text-[rgb(var(--color-fg))]">
                 ¿Te gustó este artículo?
               </h3>
-              <p className="text-[rgb(var(--color-muted))] mb-6">
-                Descubre cómo Synko puede ayudarte a implementar estas soluciones en tu negocio.
+              <p className="mb-6 text-[rgb(var(--color-muted))]">
+                Descubre cómo Synko puede ayudarte a implementar estas
+                soluciones en tu negocio.
               </p>
               <Link
                 href="/contacto"
-                className="inline-block bg-[rgb(var(--color-primary))] text-white px-6 py-3 rounded-lg hover:opacity-90 transition-opacity font-medium"
+                className="inline-block rounded-lg bg-[rgb(var(--color-primary))] px-6 py-3 font-medium text-white transition-opacity hover:opacity-90"
               >
                 Hablar con un experto
               </Link>

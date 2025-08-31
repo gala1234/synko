@@ -14,7 +14,10 @@ type Props = HTMLAttributes<HTMLDivElement> & {
 
 export function Metrics({ metrics, className, ...props }: Props) {
   return (
-    <div className={cn("grid gap-6 sm:grid-cols-2 lg:grid-cols-3", className)} {...props}>
+    <div
+      className={cn("grid gap-6 sm:grid-cols-2 lg:grid-cols-3", className)}
+      {...props}
+    >
       {metrics.map((metric) => (
         <Card
           key={metric.label}

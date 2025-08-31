@@ -32,8 +32,8 @@ export default function ProductosPage() {
               Productos IA listos para instalar
             </h1>
             <p className="mb-8 text-xl text-[rgb(var(--color-muted))]">
-              Entregamos productos Synko listos para instalar en tu negocio en 2–6 semanas.
-              Alcance definido, ROI medible.
+              Entregamos productos Synko listos para instalar en tu negocio en
+              2–6 semanas. Alcance definido, ROI medible.
             </p>
             <Link href="/contacto">
               <Button variant="primary" size="lg">
@@ -48,9 +48,12 @@ export default function ProductosPage() {
         <Container size="lg">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {products.map((product) => (
-              <Card key={product.id} className="p-6 hover:shadow-lg transition-shadow">
+              <Card
+                key={product.id}
+                className="p-6 transition-shadow hover:shadow-lg"
+              >
                 <div className="mb-4">
-                  <div className="flex items-center justify-between mb-2">
+                  <div className="mb-2 flex items-center justify-between">
                     <Badge variant="outline" size="sm">
                       {product.sku}
                     </Badge>
@@ -75,9 +78,7 @@ export default function ProductosPage() {
                   </h3>
                   <ul className="space-y-1 text-sm text-[rgb(var(--color-muted))]">
                     {product.includes.slice(0, 4).map((item, index) => (
-                      <li key={`${product.id}-include-${index}`}>
-                        • {item}
-                      </li>
+                      <li key={`${product.id}-include-${index}`}>• {item}</li>
                     ))}
                   </ul>
                 </div>
@@ -103,5 +104,6 @@ export default function ProductosPage() {
 
 export const metadata = {
   title: "Productos Synko | Automatización IA para tu negocio",
-  description: "Productos IA listos para instalar en tu negocio. Alcance definido, ROI medible. Desde 900€.",
+  description:
+    "Productos IA listos para instalar en tu negocio. Alcance definido, ROI medible. Desde 900€.",
 };
