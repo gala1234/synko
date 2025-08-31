@@ -21,16 +21,16 @@ export function Testimonial({
       {...props}
     >
       <div className="mb-4">
-        <span className="text-4xl leading-none font-bold text-[var(--color-highlight)]">
+        <span className="text-4xl leading-none font-bold text-[rgb(var(--color-highlight))]">
           &ldquo;
         </span>
-        <p className="mt-2 text-lg leading-relaxed text-[var(--color-fg)]">
+        <p className="mt-2 text-lg leading-relaxed text-[rgb(var(--color-fg))]">
           {quote}
         </p>
       </div>
-      <div className="border-t border-[var(--color-border)] pt-4">
-        <div className="font-semibold text-[var(--color-fg)]">{author}</div>
-        <div className="text-sm text-[var(--color-muted)]">{role}</div>
+      <div className="border-t border-[rgb(var(--color-border))] pt-4">
+        <div className="font-semibold text-[rgb(var(--color-fg))]">{author}</div>
+        <div className="text-sm text-[rgb(var(--color-muted))]">{role}</div>
       </div>
     </Card>
   );

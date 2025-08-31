@@ -25,7 +25,7 @@ export function CtaBanner({
   return (
     <div
       className={cn(
-        "rounded-2xl bg-[var(--color-primary)] p-8 text-center text-white md:p-12",
+        "rounded-2xl bg-[rgb(var(--color-primary))] p-8 text-center text-white md:p-12",
         className
       )}
       {...props}

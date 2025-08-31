@@ -10,7 +10,7 @@ import siteData from "@/content/site.json";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "Servicios", href: "/servicios" },
+  { name: "Productos", href: "/productos" },
   { name: "Precios", href: "/precios" },
   { name: "Casos", href: "/casos" },
   { name: "Blog", href: "/blog" },

@@ -95,9 +95,12 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${inter.variable} ${sora.variable}`}>
       <body className="bg-bg text-fg min-h-screen antialiased">
+        <a href="#main-content" className="skip-link">
+          Saltar al contenido principal
+        </a>
         <div className="flex min-h-screen flex-col">
           <Header />
-          <main className="flex-1">{children}</main>
+          <main id="main-content" className="flex-1">{children}</main>
           <Footer />
         </div>
         <Analytics />

@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/Card";
 
 export const metadata = {
   title: "Términos y Condiciones | Synko",
-  description: "Términos y condiciones de uso de los servicios de Synko.",
+  description: "Términos y condiciones de uso de los productos Synko.",
 };
 
 export default function TerminosPage() {
@@ -29,19 +29,19 @@ export default function TerminosPage() {
                     1. Aceptación de los términos
                   </h2>
                   <p>
-                    Al acceder y utilizar los servicios de{" "}
+                    Al acceder y utilizar los productos Synko de{" "}
                     <strong>Synko</strong>, usted acepta estar sujeto a estos
                     términos y condiciones. Si no está de acuerdo con alguna
                     parte de estos términos, no debe utilizar nuestros
-                    servicios.
+                    productos.
                   </p>
                 </section>
 
                 <section>
                   <h2 className="mb-4 text-2xl font-semibold">
-                    2. Descripción de los servicios
+                    2. Descripción de los productos
                   </h2>
-                  <p>Synko ofrece servicios de:</p>
+                  <p>Synko ofrece productos de:</p>
                   <ul className="list-disc space-y-2 pl-6">
                     <li>
                       <strong>Automatización empresarial:</strong> desarrollo de
@@ -67,11 +67,11 @@ export default function TerminosPage() {
                   <h2 className="mb-4 text-2xl font-semibold">
                     3. Condiciones de uso
                   </h2>
-                  <p>Al utilizar nuestros servicios, usted se compromete a:</p>
+                  <p>Al utilizar nuestros productos, usted se compromete a:</p>
                   <ul className="list-disc space-y-2 pl-6">
                     <li>Proporcionar información veraz y actualizada.</li>
                     <li>
-                      No utilizar los servicios para actividades ilegales o no
+                      No utilizar los productos para actividades ilegales o no
                       autorizadas.
                     </li>
                     <li>
@@ -94,7 +94,7 @@ export default function TerminosPage() {
                   </h2>
                   <p>
                     Todos los derechos de propiedad intelectual sobre los
-                    servicios, software, documentación y materiales
+                    productos, software, documentación y materiales
                     proporcionados por Synko permanecen como propiedad exclusiva
                     de Synko o sus licenciantes.
                   </p>
@@ -134,17 +134,17 @@ export default function TerminosPage() {
                     6. Garantías y limitación de responsabilidad
                   </h2>
                   <p>
-                    Synko se compromete a prestar los servicios con la
+                    Synko se compromete a entregar los productos con la
                     diligencia profesional exigible. Sin embargo:
                   </p>
                   <ul className="list-disc space-y-2 pl-6">
                     <li>
-                      No garantizamos que los servicios estén libres de errores
+                      No garantizamos que los productos estén libres de errores
                       o interrupciones.
                     </li>
                     <li>
                       Nuestra responsabilidad se limita al importe pagado por
-                      los servicios específicos.
+                      los productos específicos.
                     </li>
                     <li>
                       No seremos responsables de daños indirectos, lucro cesante
@@ -164,7 +164,7 @@ export default function TerminosPage() {
                   <p>
                     Synko se compromete a mantener la confidencialidad de toda
                     la información proporcionada por el cliente durante la
-                    prestación de los servicios. Esta obligación permanecerá
+                    entrega de los productos. Esta obligación permanecerá
                     vigente incluso después de la finalización de la relación
                     contractual.
                   </p>
@@ -181,7 +181,7 @@ export default function TerminosPage() {
                   </p>
                   <ul className="list-disc space-y-2 pl-6">
                     <li>
-                      El cliente deberá pagar todos los servicios prestados
+                      El cliente deberá pagar todos los productos entregados
                       hasta la fecha de terminación.
                     </li>
                     <li>

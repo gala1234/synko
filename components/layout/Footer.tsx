@@ -6,7 +6,7 @@ import siteData from "@/content/site.json";
 const footerLinks = {
   company: [
     { name: "Sobre nosotros", href: "/sobre-nosotros" },
-    { name: "Servicios", href: "/servicios" },
+    { name: "Productos", href: "/productos" },
     { name: "Casos de éxito", href: "/casos" },
     { name: "Blog", href: "/blog" },
   ],

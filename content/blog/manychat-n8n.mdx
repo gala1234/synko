@@ -1,0 +1,65 @@
+---
+title: "ManyChat + n8n: del DM a la venta en 3 pasos"
+date: "2025-08-31"
+summary: "Automatiza el paso desde un mensaje en Instagram hasta la conversión en venta."
+tags: ["manychat", "n8n", "automatización"]
+---
+
+## Paso 1 — Captura en ManyChat
+
+Configura un flujo en ManyChat para capturar interés desde Instagram Direct Messages. El bot puede:
+
+- Detectar palabras clave específicas
+- Hacer preguntas de calificación
+- Recopilar información de contacto
+- Segmentar leads según sus respuestas
+
+```javascript
+// Ejemplo de webhook payload desde ManyChat
+{
+  "user_id": "123456789",
+  "first_name": "María",
+  "last_name": "González",
+  "phone": "+34600123456",
+  "email": "maria@email.com",
+  "interest": "producto_premium",
+  "budget": "500-1000"
+}
+```
+
+## Paso 2 — Orquesta con n8n
+
+Conecta vía webhook para validar stock, enriquecer datos y enviar información al CRM:
+
+1. **Recibe el webhook** de ManyChat con los datos del lead
+2. **Valida disponibilidad** consultando tu inventario
+3. **Enriquece el perfil** con datos adicionales (ubicación, historial)
+4. **Actualiza el CRM** con la información completa
+5. **Dispara notificaciones** al equipo de ventas
+
+### Flujo de ejemplo en n8n:
+
+```
+Webhook → Validar Stock → Enriquecer Datos → CRM Update → Notificar Equipo
+```
+
+## Paso 3 — Cierra la venta
+
+Envía link de pago personalizado y confirma en tu sistema:
+
+- **Genera link de pago** con Stripe/PayPal
+- **Envía por WhatsApp/Email** el enlace personalizado
+- **Confirma automáticamente** cuando se complete el pago
+- **Actualiza inventario** y sistemas internos
+- **Programa seguimiento** post-venta
+
+### Métricas clave a trackear:
+
+- **Tasa de conversión DM → Lead**: 15-25%
+- **Lead → Venta**: 8-15%
+- **Tiempo promedio de cierre**: 24-48h
+- **Valor promedio por venta**: Depende del producto
+
+---
+
+**¿Quieres implementar esta automatización?** En Synko te ayudamos a configurar todo el flujo en menos de una semana.

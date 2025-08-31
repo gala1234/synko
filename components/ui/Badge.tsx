@@ -16,14 +16,14 @@ export function Badge({
 
   const variants = {
     default:
-      "bg-[color-mix(in_srgb,_var(--color-muted)_12%,_transparent)] text-[var(--color-muted)]",
+      "bg-[rgb(var(--color-muted)/0.12)] text-[rgb(var(--color-muted))]",
     primary:
-      "bg-[color-mix(in_srgb,_var(--color-primary)_12%,_transparent)] text-[var(--color-primary)]",
+      "bg-[rgb(var(--color-primary)/0.12)] text-[rgb(var(--color-primary))]",
     accent:
-      "bg-[color-mix(in_srgb,_var(--color-accent)_12%,_transparent)] text-[var(--color-accent)]",
+      "bg-[rgb(var(--color-accent)/0.12)] text-[rgb(var(--color-accent))]",
     highlight:
-      "bg-[color-mix(in_srgb,_var(--color-highlight-text,_var(--color-highlight))_12%,_transparent)] text-[var(--color-highlight-text,_var(--color-highlight))]",
-    outline: "border border-[var(--color-border)] text-[var(--color-fg)]",
+      "bg-[rgb(var(--color-highlight)/0.12)] text-[rgb(var(--color-highlight))]",
+    outline: "border border-[rgb(var(--color-border))] text-[rgb(var(--color-fg))]",
   };
 
   const sizes = {

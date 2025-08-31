@@ -20,13 +20,13 @@ export function Metrics({ metrics, className, ...props }: Props) {
           key={metric.label}
           className="p-6 text-center transition-shadow hover:shadow-lg"
         >
-          <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-[var(--color-highlight)]/10 text-[var(--color-highlight)]">
+          <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-[rgb(var(--color-highlight)/0.1)] text-[rgb(var(--color-highlight))]">
             {metric.icon}
           </div>
-          <div className="mb-2 text-3xl font-bold text-[var(--color-highlight)]">
+          <div className="mb-2 text-3xl font-bold text-[rgb(var(--color-highlight))]">
             {metric.value}
           </div>
-          <div className="font-medium text-[var(--color-muted)]">
+          <div className="font-medium text-[rgb(var(--color-muted))]">
             {metric.label}
           </div>
         </Card>

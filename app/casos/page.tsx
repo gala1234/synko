@@ -43,7 +43,7 @@ export default function CasosPage() {
           elements.push(
             <ul
               key={`list-${line.slice(0, 20)}`}
-              className="mb-6 space-y-2 text-[var(--color-muted)]"
+              className="mb-6 space-y-2 text-[rgb(var(--color-muted))]"
             >
               {currentList.map((item) => {
                 const cleanItem = item.replace("- ", "• ");
@@ -60,7 +60,7 @@ export default function CasosPage() {
         elements.push(
           <h3
             key={`heading-${line.slice(0, 30)}`}
-            className="font-display mb-4 text-xl font-bold text-[var(--color-fg)]"
+            className="font-display mb-4 text-xl font-bold text-[rgb(var(--color-fg))]"
           >
             {line.replace("## ", "")}
           </h3>
@@ -71,8 +71,8 @@ export default function CasosPage() {
         if (currentList.length > 0) {
           elements.push(
             <ul
-              key={`list-mid-${line.slice(0, 20)}`}
-              className="mb-6 space-y-2 text-[var(--color-muted)]"
+              key={`list-${line.slice(0, 20)}`}
+              className="mb-6 space-y-2 text-[rgb(var(--color-muted))]"
             >
               {currentList.map((item) => {
                 const cleanItem = item.replace("- ", "• ");
@@ -89,7 +89,7 @@ export default function CasosPage() {
         elements.push(
           <p
             key={`paragraph-${line.slice(0, 30)}`}
-            className="mb-4 text-[var(--color-muted)]"
+            className="mb-4 text-[rgb(var(--color-muted))]"
           >
             {renderTextWithBold(line)}
           </p>
@@ -101,7 +101,7 @@ export default function CasosPage() {
       elements.push(
         <ul
           key="final-list"
-          className="mb-6 space-y-2 text-[var(--color-muted)]"
+          className="mb-6 space-y-2 text-[rgb(var(--color-muted))]"
         >
           {currentList.map((item) => {
             const cleanItem = item.replace("- ", "• ");
@@ -126,10 +126,10 @@ export default function CasosPage() {
             <Badge variant="highlight" size="md" className="mb-4">
               Casos de estudio
             </Badge>
-            <h1 className="font-display mb-6 text-4xl font-bold text-[var(--color-fg)] md:text-5xl">
+            <h1 className="font-display mb-6 text-4xl font-bold text-[rgb(var(--color-fg))] md:text-5xl">
               Resultados reales de nuestros clientes
             </h1>
-            <p className="mb-8 text-xl text-[var(--color-muted)]">
+            <p className="mb-8 text-xl text-[rgb(var(--color-muted))]">
               Descubre cómo hemos ayudado a empresas como la tuya a automatizar
               y crecer.
             </p>
@@ -151,10 +151,10 @@ export default function CasosPage() {
                     >
                       {caseStudy.sector}
                     </Badge>
-                    <h2 className="font-display mb-4 text-3xl font-bold text-[var(--color-fg)]">
+                    <h2 className="font-display mb-4 text-3xl font-bold text-[rgb(var(--color-fg))]">
                       {caseStudy.title}
                     </h2>
-                    <p className="mb-6 text-[var(--color-muted)]">
+                    <p className="mb-6 text-[rgb(var(--color-muted))]">
                       {caseStudy.client}
                     </p>
                     <div className="prose prose-sm max-w-none">
@@ -165,11 +165,11 @@ export default function CasosPage() {
                     </Button>
                   </div>
                   <div
-                    className={`flex h-64 items-center justify-center rounded-2xl bg-[var(--color-muted)]/10 ${
+                    className={`flex h-64 items-center justify-center rounded-2xl bg-[rgb(var(--color-muted))]/10 ${
                       index % 2 === 1 ? "md:order-1" : ""
                     }`}
                   >
-                    <span className="text-[var(--color-muted)]">
+                    <span className="text-[rgb(var(--color-muted))]">
                       Imagen del caso
                     </span>
                   </div>

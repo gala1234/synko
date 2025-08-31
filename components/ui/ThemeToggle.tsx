@@ -33,8 +33,9 @@ export function ThemeToggle({ className }: ThemeToggleProps) {
   if (!mounted) {
     return (
       <button
+        type="button"
         className={cn(
-          "flex h-9 w-9 items-center justify-center rounded-md border border-[var(--color-border)] bg-transparent text-[var(--color-fg)] transition-colors hover:bg-[var(--color-border)] focus:ring-2 focus:ring-[var(--color-primary)] focus:ring-offset-2 focus:outline-none",
+          "flex h-9 w-9 items-center justify-center rounded-md border border-[rgb(var(--color-border))] bg-transparent text-[rgb(var(--color-fg))] transition-colors hover:bg-[rgb(var(--color-border))] focus:ring-2 focus:ring-[rgb(var(--color-primary))] focus:ring-offset-2 focus:outline-none",
           className
         )}
         aria-label="Toggle theme"
@@ -49,7 +50,7 @@ export function ThemeToggle({ className }: ThemeToggleProps) {
       type="button"
       onClick={toggleTheme}
       className={cn(
-        "flex h-9 w-9 items-center justify-center rounded-md border border-[var(--color-border)] bg-transparent text-[var(--color-fg)] transition-colors hover:bg-[var(--color-border)] focus:ring-2 focus:ring-[var(--color-primary)] focus:ring-offset-2 focus:outline-none",
+        "flex h-9 w-9 items-center justify-center rounded-md border border-[rgb(var(--color-border))] bg-transparent text-[rgb(var(--color-fg))] transition-colors hover:bg-[rgb(var(--color-border))] focus:ring-2 focus:ring-[rgb(var(--color-primary))] focus:ring-offset-2 focus:outline-none",
         className
       )}
       aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}

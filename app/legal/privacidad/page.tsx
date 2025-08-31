@@ -83,12 +83,12 @@ export default function PrivacidadPage() {
                       personalizados.
                     </li>
                     <li>
-                      <strong>Prestación de servicios:</strong> desarrollar y
-                      entregar los servicios de automatización e IA contratados.
+                      <strong>Entrega de productos:</strong> desarrollar y
+                      entregar los productos Synko de automatización e IA contratados.
                     </li>
                     <li>
                       <strong>Comunicación comercial:</strong> enviarle
-                      información sobre nuestros servicios (solo con su
+                      información sobre nuestros productos Synko (solo con su
                       consentimiento).
                     </li>
                     <li>
@@ -108,11 +108,11 @@ export default function PrivacidadPage() {
                   <ul className="list-disc space-y-2 pl-6">
                     <li>
                       <strong>Ejecución de un contrato:</strong> para la
-                      prestación de nuestros servicios.
+                      entrega de nuestros productos.
                     </li>
                     <li>
                       <strong>Interés legítimo:</strong> para responder a sus
-                      consultas y mejorar nuestros servicios.
+                      consultas y mejorar nuestros productos.
                     </li>
                     <li>
                       <strong>Consentimiento:</strong> para el envío de
@@ -159,7 +159,7 @@ export default function PrivacidadPage() {
                   <ul className="list-disc space-y-2 pl-6">
                     <li>
                       <strong>Proveedores de servicios:</strong> empresas que
-                      nos ayudan a prestar nuestros servicios (hosting, email,
+                      nos ayudan a entregar nuestros productos (hosting, email,
                       análisis).
                     </li>
                     <li>

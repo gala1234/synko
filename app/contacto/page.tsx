@@ -16,7 +16,7 @@ function SubmitButton({ isSuccess }: { isSuccess: boolean }) {
     <Button
       type="submit"
       variant="primary"
-      className="w-full focus:ring-2 focus:ring-[var(--color-primary)] focus:ring-offset-2 focus:outline-none"
+      className="w-full focus:ring-2 focus:ring-[rgb(var(--color-primary))] focus:ring-offset-2 focus:outline-none"
       aria-disabled={isDisabled}
       disabled={isDisabled}
     >
@@ -137,7 +137,7 @@ export default function ContactPage() {
                       aria-errormessage={
                         state?.errors?.name ? "name-error" : undefined
                       }
-                      className={`w-full rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-[var(--color-primary)] focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 ${
+                      className={`w-full rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-[rgb(var(--color-primary))] focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 ${
                         state?.errors?.name
                           ? "border-red-500 bg-red-50"
                           : "border-border"
@@ -174,7 +174,7 @@ export default function ContactPage() {
                       aria-errormessage={
                         state?.errors?.email ? "email-error" : undefined
                       }
-                      className={`w-full rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-[var(--color-primary)] focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 ${
+                      className={`w-full rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-[rgb(var(--color-primary))] focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 ${
                         state?.errors?.email
                           ? "border-red-500 bg-red-50"
                           : "border-border"
@@ -204,7 +204,7 @@ export default function ContactPage() {
                       id="websiteOrIg"
                       name="websiteOrIg"
                       disabled={state?.ok}
-                      className="border-border w-full rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-[var(--color-primary)] focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+                      className="border-border w-full rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-[rgb(var(--color-primary))] focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
                       placeholder="https://tuweb.com o @tuinstagram"
                     />
                   </div>
@@ -227,7 +227,7 @@ export default function ContactPage() {
                       aria-errormessage={
                         state?.errors?.sector ? "sector-error" : undefined
                       }
-                      className={`w-full rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-[var(--color-primary)] focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 ${
+                      className={`w-full rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-[rgb(var(--color-primary))] focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 ${
                         state?.errors?.sector
                           ? "border-red-500 bg-red-50"
                           : "border-border"
@@ -269,7 +269,7 @@ export default function ContactPage() {
                       aria-errormessage={
                         state?.errors?.budget ? "budget-error" : undefined
                       }
-                      className={`w-full rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-[var(--color-primary)] focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 ${
+                      className={`w-full rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-[rgb(var(--color-primary))] focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 ${
                         state?.errors?.budget
                           ? "border-red-500 bg-red-50"
                           : "border-border"
@@ -311,7 +311,7 @@ export default function ContactPage() {
                       aria-errormessage={
                         state?.errors?.message ? "message-error" : undefined
                       }
-                      className={`w-full resize-none rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-[var(--color-primary)] focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 ${
+                      className={`w-full resize-none rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-[rgb(var(--color-primary))] focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 ${
                         state?.errors?.message
                           ? "border-red-500 bg-red-50"
                           : "border-border"

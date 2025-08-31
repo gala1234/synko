@@ -20,19 +20,19 @@ export function FeatureCard({
       className={cn("p-6 transition-shadow hover:shadow-lg", className)}
       {...props}
     >
-      <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-[var(--color-highlight)]/10 text-[var(--color-highlight)]">
+      <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-[rgb(var(--color-highlight)/0.1)] text-[rgb(var(--color-highlight))]">
         {icon}
       </div>
-      <h3 className="font-display mb-4 text-xl font-bold text-[var(--color-fg)]">
+      <h3 className="font-display mb-4 text-xl font-bold text-[rgb(var(--color-fg))]">
         {title}
       </h3>
       <ul className="space-y-2">
         {bullets.map((bullet) => (
           <li
             key={bullet}
-            className="flex items-start text-[var(--color-muted)]"
+            className="flex items-start text-[rgb(var(--color-muted))]"
           >
-            <span className="mt-1 mr-2 text-[var(--color-highlight)]">•</span>
+            <span className="mt-1 mr-2 text-[rgb(var(--color-highlight))]">•</span>
             <span>{bullet}</span>
           </li>
         ))}

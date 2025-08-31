@@ -15,7 +15,7 @@ export function Card({
   ...props
 }: Props) {
   const base =
-    "rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg)]";
+    "rounded-2xl border border-[rgb(var(--color-border))] bg-[rgb(var(--color-bg))]";
 
   const hoverEffect = hover
     ? "transition-shadow duration-200 hover:shadow-md"

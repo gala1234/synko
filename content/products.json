@@ -1,0 +1,136 @@
+[
+  {
+    "id": "launch",
+    "sku": "SKU-001",
+    "title": "Synko Launch",
+    "tagline": "Setup completo en 2 semanas",
+    "description": "Tu primer agente IA listo para funcionar. Incluye integración, tracking y dashboard para empezar a automatizar desde el día uno.",
+    "problem": "Las empresas pierden tiempo en tareas repetitivas que podrían automatizarse, pero no saben por dónde empezar o les parece muy complejo.",
+    "includes": [
+      "1 agente IA personalizado",
+      "1 integración API principal",
+      "Sistema de tracking básico",
+      "Mini-dashboard de métricas",
+      "Documentación completa",
+      "2 semanas de soporte incluido"
+    ],
+    "deliveryTime": "2 semanas",
+    "price": "1.800–2.400 €",
+    "useCase": "Perfecto para empresas que quieren automatizar su primer proceso sin riesgo.",
+    "caseStudy": "/casos/ecommerce"
+  },
+  {
+    "id": "saleskit",
+    "sku": "SKU-002",
+    "title": "Synko SalesKit",
+    "tagline": "Automatiza tu proceso de ventas",
+    "description": "Agente IA que cualifica leads, agenda citas y hace seguimiento automático de tu pipeline de ventas.",
+    "problem": "Los equipos de ventas pierden tiempo en tareas administrativas en lugar de cerrar deals.",
+    "includes": [
+      "Agente de cualificación de leads",
+      "Integración con CRM",
+      "Automatización de seguimientos",
+      "Agenda inteligente",
+      "Reportes de conversión"
+    ],
+    "deliveryTime": "3-4 semanas",
+    "price": "2.200–3.000 €",
+    "useCase": "Ideal para equipos de ventas que quieren automatizar la prospección.",
+    "caseStudy": "/casos/clinica"
+  },
+  {
+    "id": "stockcheck",
+    "sku": "SKU-003",
+    "title": "Synko StockCheck",
+    "tagline": "Verifica stock y responde en tiempo real",
+    "description": "Agente que consulta tu inventario en tiempo real y responde a clientes con disponibilidad y links de pago directos.",
+    "problem": "Los clientes abandonan porque no saben si hay stock disponible o el proceso de compra es lento.",
+    "includes": [
+      "Integración con Shopify/WooCommerce",
+      "Consultas de stock en tiempo real",
+      "Respuestas enriquecidas con imágenes",
+      "Links de pago directo",
+      "Notificaciones de stock bajo"
+    ],
+    "deliveryTime": "2-3 semanas",
+    "price": "900–1.200 €",
+    "useCase": "Perfecto para ecommerce que quieren reducir abandono de carrito.",
+    "caseStudy": "/casos/ecommerce"
+  },
+  {
+    "id": "bookpay",
+    "sku": "SKU-004",
+    "title": "Synko BookPay",
+    "tagline": "Reservas y pagos automatizados",
+    "description": "Sistema completo de reservas con pago automático, recordatorios y gestión de cancelaciones.",
+    "problem": "Gestionar reservas manualmente genera errores, dobles bookings y pérdida de ingresos.",
+    "includes": [
+      "Sistema de reservas inteligente",
+      "Procesamiento de pagos",
+      "Recordatorios automáticos",
+      "Gestión de cancelaciones",
+      "Calendario sincronizado"
+    ],
+    "deliveryTime": "4-5 semanas",
+    "price": "1.500–2.200 €",
+    "useCase": "Ideal para clínicas, salones, consultorías y servicios por citas.",
+    "caseStudy": "/casos/clinica"
+  },
+  {
+    "id": "raglite",
+    "sku": "SKU-005",
+    "title": "Synko RAGLite",
+    "tagline": "Conocimiento empresarial accesible",
+    "description": "Agente que responde preguntas basándose en tu documentación interna, manuales y base de conocimiento.",
+    "problem": "Los empleados pierden tiempo buscando información en documentos dispersos.",
+    "includes": [
+      "Indexación de documentos",
+      "Búsqueda semántica avanzada",
+      "Respuestas con fuentes",
+      "Interfaz de chat empresarial",
+      "Actualizaciones automáticas"
+    ],
+    "deliveryTime": "3-4 semanas",
+    "price": "1.200–1.800 €",
+    "useCase": "Perfecto para empresas con mucha documentación interna.",
+    "caseStudy": "/casos/ecommerce"
+  },
+  {
+    "id": "roiboard",
+    "sku": "SKU-006",
+    "title": "Synko ROIBoard",
+    "tagline": "Dashboard de ROI en tiempo real",
+    "description": "Panel que mide el impacto real de tus automatizaciones con métricas de negocio y ROI calculado.",
+    "problem": "Las empresas automatizan pero no pueden medir el impacto real en sus resultados.",
+    "includes": [
+      "Dashboard personalizado",
+      "Cálculo automático de ROI",
+      "Métricas de negocio",
+      "Reportes ejecutivos",
+      "Alertas de rendimiento"
+    ],
+    "deliveryTime": "2-3 semanas",
+    "price": "800–1.400 €",
+    "useCase": "Ideal para empresas que quieren medir el impacto de sus automatizaciones.",
+    "caseStudy": "/casos/clinica"
+  },
+  {
+    "id": "care",
+    "sku": "SKU-007",
+    "title": "Synko Care Plan",
+    "tagline": "Optimización continua",
+    "description": "Plan de mantenimiento y mejora continua para tus productos Synko con roadmap personalizado.",
+    "problem": "Los sistemas automatizados necesitan evolucionar con el negocio para mantener su efectividad.",
+    "includes": [
+      "8-16 horas/mes de mejoras",
+      "Informes mensuales de ROI",
+      "Roadmap personalizado",
+      "Soporte prioritario",
+      "Nuevas funcionalidades"
+    ],
+    "deliveryTime": "Servicio continuo",
+    "price": "350–700 €/mes",
+    "useCase": "Esencial para empresas que quieren maximizar el ROI a largo plazo.",
+    "caseStudy": "/casos/ecommerce"
+  }
+]

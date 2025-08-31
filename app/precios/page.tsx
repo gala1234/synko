@@ -42,10 +42,10 @@ export default function PreciosPage() {
             <Badge variant="highlight" size="md" className="mb-4">
               Precios
             </Badge>
-            <h1 className="font-display mb-6 text-4xl font-bold text-[var(--color-fg)] md:text-5xl">
+            <h1 className="font-display mb-6 text-4xl font-bold text-[rgb(var(--color-fg))] md:text-5xl">
               Planes que se adaptan a tu crecimiento
             </h1>
-            <p className="mb-8 text-xl text-[var(--color-muted)]">
+            <p className="mb-8 text-xl text-[rgb(var(--color-muted))]">
               Desde automatización básica hasta soluciones empresariales
               completas.
             </p>
@@ -61,7 +61,7 @@ export default function PreciosPage() {
                 key={plan.id}
                 className={`p-8 text-center ${
                   plan.id === "scale"
-                    ? "relative border-[var(--color-highlight)]"
+                    ? "relative border-[rgb(var(--color-highlight))]"
                     : ""
                 }`}
               >
@@ -75,27 +75,24 @@ export default function PreciosPage() {
                   </Badge>
                 )}
 
-                <h3 className="font-display mb-4 text-2xl font-bold text-[var(--color-fg)]">
+                <h3 className="font-display mb-4 text-2xl font-bold text-[rgb(var(--color-fg))]">
                   {plan.title}
                 </h3>
-
-                <div className="mb-6">
-                  <span className="text-4xl font-bold text-[var(--color-highlight)]">
+                <div className="mb-4">
+                  <span className="text-4xl font-bold text-[rgb(var(--color-highlight))]">
                     {plan.priceRange}
                   </span>
                 </div>
-
-                <p className="mb-6 text-[var(--color-muted)]">
+                <p className="mb-6 text-[rgb(var(--color-muted))]">
                   {plan.description}
                 </p>
-
-                <ul className="mb-6 space-y-3 text-[var(--color-muted)]">
+                <ul className="mb-6 space-y-3 text-[rgb(var(--color-muted))]">
                   {plan.bullets.map((bullet, bulletIndex) => (
                     <li key={`${plan.id}-bullet-${bulletIndex}`}>• {bullet}</li>
                   ))}
                 </ul>
 
-                <p className="mb-8 text-sm text-[var(--color-muted)] italic">
+                <p className="mb-8 text-sm text-[rgb(var(--color-muted))] italic">
                   {plan.notes}
                 </p>
 
