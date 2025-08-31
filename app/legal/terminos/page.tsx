@@ -1,134 +1,144 @@
-import { Container } from "@/components/ui/Container";
-import { Section } from "@/components/ui/Section";
-import { Badge } from "@/components/ui/Badge";
+import { Section } from '@/components/ui/Section';
+import { Container } from '@/components/ui/Container';
+import { Card } from '@/components/ui/Card';
+
+export const metadata = {
+  title: 'Términos y Condiciones | Synko',
+  description: 'Términos y condiciones de uso de los servicios de Synko.',
+};
 
 export default function TerminosPage() {
   return (
     <main>
-      <Section padding="lg">
-        <Container size="lg">
+      <Section className="py-24">
+        <Container>
           <div className="max-w-4xl mx-auto">
-            <Badge variant="highlight" size="md" className="mb-4">
-              Legal
-            </Badge>
-            <h1 className="text-4xl md:text-5xl font-display font-bold text-[var(--color-fg)] mb-6">
-              Términos y Condiciones
-            </h1>
-            <p className="text-xl text-[var(--color-muted)] mb-8">
-              Última actualización: 15 de enero de 2024
-            </p>
-          </div>
-        </Container>
-      </Section>
-
-      <Section padding="lg">
-        <Container size="lg">
-          <div className="max-w-4xl mx-auto prose prose-lg">
-            <div className="space-y-8 text-[var(--color-muted)]">
-              <section>
-                <h2 className="text-2xl font-display font-bold text-[var(--color-fg)] mb-4">
-                  1. Aceptación de términos
-                </h2>
-                <p>
-                  Al acceder y utilizar los servicios de Synko, aceptas estar sujeto a estos términos y condiciones. Si no estás de acuerdo con alguna parte de estos términos, no debes utilizar nuestros servicios.
-                </p>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-display font-bold text-[var(--color-fg)] mb-4">
-                  2. Descripción del servicio
-                </h2>
-                <p className="mb-4">
-                  Synko proporciona servicios de automatización e inteligencia artificial, incluyendo:
-                </p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Desarrollo de chatbots y agentes conversacionales</li>
-                  <li>Integraciones con APIs y plataformas de terceros</li>
-                  <li>Automatización de procesos de ventas y marketing</li>
-                  <li>Análisis y reportes de métricas</li>
-                </ul>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-display font-bold text-[var(--color-fg)] mb-4">
-                  3. Responsabilidades del usuario
-                </h2>
-                <p className="mb-4">
-                  Como usuario de nuestros servicios, te comprometes a:
-                </p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Proporcionar información precisa y actualizada</li>
-                  <li>Utilizar los servicios de manera legal y ética</li>
-                  <li>No interferir con el funcionamiento de nuestros sistemas</li>
-                  <li>Mantener la confidencialidad de tus credenciales de acceso</li>
-                  <li>Cumplir con las políticas de las plataformas integradas</li>
-                </ul>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-display font-bold text-[var(--color-fg)] mb-4">
-                  4. Facturación y pagos
-                </h2>
-                <p className="mb-4">
-                  Los términos de facturación incluyen:
-                </p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Los pagos se procesan mensualmente por adelantado</li>
-                  <li>Los precios pueden cambiar con 30 días de aviso</li>
-                  <li>Los reembolsos se evalúan caso por caso</li>
-                  <li>El servicio puede suspenderse por falta de pago</li>
-                </ul>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-display font-bold text-[var(--color-fg)] mb-4">
-                  5. Propiedad intelectual
-                </h2>
-                <p>
-                  Synko retiene todos los derechos sobre su tecnología, software y metodologías. Los clientes mantienen la propiedad de sus datos y contenido, otorgando a Synko una licencia para procesarlos según sea necesario para proporcionar los servicios.
-                </p>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-display font-bold text-[var(--color-fg)] mb-4">
-                  6. Limitación de responsabilidad
-                </h2>
-                <p>
-                  Synko no será responsable por daños indirectos, incidentales, especiales o consecuentes que resulten del uso de nuestros servicios. Nuestra responsabilidad total no excederá el monto pagado por los servicios en los últimos 12 meses.
-                </p>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-display font-bold text-[var(--color-fg)] mb-4">
-                  7. Terminación
-                </h2>
-                <p>
-                  Cualquiera de las partes puede terminar el acuerdo con 30 días de aviso. Synko se reserva el derecho de suspender o terminar servicios inmediatamente en caso de violación de estos términos.
-                </p>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-display font-bold text-[var(--color-fg)] mb-4">
-                  8. Ley aplicable
-                </h2>
-                <p>
-                  Estos términos se rigen por las leyes de México. Cualquier disputa será resuelta en los tribunales competentes de Ciudad de México.
-                </p>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-display font-bold text-[var(--color-fg)] mb-4">
-                  9. Contacto
-                </h2>
-                <p>
-                  Para preguntas sobre estos términos, contacta:
-                </p>
-                <p className="mt-4">
-                  <strong>Email:</strong> legal@synko.dev<br />
-                  <strong>Dirección:</strong> Ciudad de México, México
-                </p>
-              </section>
+            <div className="text-center mb-16">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                Términos y Condiciones
+              </h1>
+              <p className="text-xl text-muted-foreground">
+                Última actualización: {new Date().toLocaleDateString('es-ES')}
+              </p>
             </div>
+
+            <Card className="p-8 prose prose-lg max-w-none">
+              <div className="space-y-8">
+                <section>
+                  <h2 className="text-2xl font-semibold mb-4">1. Aceptación de los términos</h2>
+                  <p>
+                    Al acceder y utilizar los servicios de <strong>Synko</strong>, usted acepta estar sujeto a estos términos y condiciones. Si no está de acuerdo con alguna parte de estos términos, no debe utilizar nuestros servicios.
+                  </p>
+                </section>
+
+                <section>
+                  <h2 className="text-2xl font-semibold mb-4">2. Descripción de los servicios</h2>
+                  <p>Synko ofrece servicios de:</p>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li><strong>Automatización empresarial:</strong> desarrollo de bots y sistemas automatizados para optimizar procesos de negocio.</li>
+                    <li><strong>Inteligencia artificial:</strong> implementación de soluciones de IA para mejorar la eficiencia operativa.</li>
+                    <li><strong>Desarrollo web:</strong> creación de sitios web y aplicaciones personalizadas.</li>
+                    <li><strong>Consultoría tecnológica:</strong> asesoramiento en transformación digital y optimización de procesos.</li>
+                  </ul>
+                </section>
+
+                <section>
+                  <h2 className="text-2xl font-semibold mb-4">3. Condiciones de uso</h2>
+                  <p>Al utilizar nuestros servicios, usted se compromete a:</p>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>Proporcionar información veraz y actualizada.</li>
+                    <li>No utilizar los servicios para actividades ilegales o no autorizadas.</li>
+                    <li>Respetar los derechos de propiedad intelectual de Synko y terceros.</li>
+                    <li>No intentar acceder de forma no autorizada a nuestros sistemas.</li>
+                    <li>Cumplir con todas las leyes y regulaciones aplicables.</li>
+                  </ul>
+                </section>
+
+                <section>
+                  <h2 className="text-2xl font-semibold mb-4">4. Propiedad intelectual</h2>
+                  <p>
+                    Todos los derechos de propiedad intelectual sobre los servicios, software, documentación y materiales proporcionados por Synko permanecen como propiedad exclusiva de Synko o sus licenciantes.
+                  </p>
+                  <p className="mt-4">
+                    Los desarrollos personalizados realizados para el cliente serán propiedad del cliente una vez completado el pago total, salvo que se acuerde lo contrario por escrito.
+                  </p>
+                </section>
+
+                <section>
+                  <h2 className="text-2xl font-semibold mb-4">5. Precios y pagos</h2>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>Los precios se especifican en euros (EUR) y pueden estar sujetos a IVA según la legislación aplicable.</li>
+                    <li>Los pagos se realizarán según los términos acordados en cada proyecto específico.</li>
+                    <li>Nos reservamos el derecho de modificar nuestros precios con previo aviso.</li>
+                    <li>Los pagos atrasados pueden estar sujetos a intereses de demora según la legislación vigente.</li>
+                  </ul>
+                </section>
+
+                <section>
+                  <h2 className="text-2xl font-semibold mb-4">6. Garantías y limitación de responsabilidad</h2>
+                  <p>
+                    Synko se compromete a prestar los servicios con la diligencia profesional exigible. Sin embargo:
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>No garantizamos que los servicios estén libres de errores o interrupciones.</li>
+                    <li>Nuestra responsabilidad se limita al importe pagado por los servicios específicos.</li>
+                    <li>No seremos responsables de daños indirectos, lucro cesante o pérdida de datos.</li>
+                    <li>El cliente es responsable de mantener copias de seguridad de su información.</li>
+                  </ul>
+                </section>
+
+                <section>
+                  <h2 className="text-2xl font-semibold mb-4">7. Confidencialidad</h2>
+                  <p>
+                    Synko se compromete a mantener la confidencialidad de toda la información proporcionada por el cliente durante la prestación de los servicios. Esta obligación permanecerá vigente incluso después de la finalización de la relación contractual.
+                  </p>
+                </section>
+
+                <section>
+                  <h2 className="text-2xl font-semibold mb-4">8. Terminación</h2>
+                  <p>
+                    Cualquiera de las partes puede terminar la relación contractual con previo aviso por escrito. En caso de terminación:
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>El cliente deberá pagar todos los servicios prestados hasta la fecha de terminación.</li>
+                    <li>Synko entregará todos los trabajos completados hasta esa fecha.</li>
+                    <li>Las obligaciones de confidencialidad permanecerán vigentes.</li>
+                  </ul>
+                </section>
+
+                <section>
+                  <h2 className="text-2xl font-semibold mb-4">9. Protección de datos</h2>
+                  <p>
+                    El tratamiento de datos personales se rige por nuestra <a href="/legal/privacidad" className="text-primary hover:underline">Política de Privacidad</a>, que forma parte integral de estos términos y condiciones.
+                  </p>
+                </section>
+
+                <section>
+                  <h2 className="text-2xl font-semibold mb-4">10. Ley aplicable y jurisdicción</h2>
+                  <p>
+                    Estos términos y condiciones se rigen por la legislación española. Para la resolución de cualquier controversia, las partes se someten a la jurisdicción de los tribunales de España.
+                  </p>
+                </section>
+
+                <section>
+                  <h2 className="text-2xl font-semibold mb-4">11. Modificaciones</h2>
+                  <p>
+                    Nos reservamos el derecho de modificar estos términos y condiciones en cualquier momento. Las modificaciones entrarán en vigor desde su publicación en esta página.
+                  </p>
+                </section>
+
+                <section>
+                  <h2 className="text-2xl font-semibold mb-4">12. Contacto</h2>
+                  <p>
+                    Para cualquier consulta sobre estos términos y condiciones, puede contactarnos en:
+                  </p>
+                  <ul className="list-none space-y-2">
+                    <li><strong>Email:</strong> <a href="mailto:hola@synko.dev" className="text-primary hover:underline">hola@synko.dev</a></li>
+                    <li><strong>Asunto:</strong> "Términos y Condiciones"</li>
+                  </ul>
+                </section>
+              </div>
+            </Card>
           </div>
         </Container>
       </Section>

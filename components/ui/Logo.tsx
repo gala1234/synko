@@ -28,12 +28,12 @@ export function Logo({ className, size = "md", showText = true }: LogoProps) {
           logoSizes[size]
         )}
       >
-        <svg title="Synko - Your Collaborative Workspace"
+        <svg
           viewBox="0 0 24 24"
           fill="none"
           className="h-3/4 w-3/4 text-white"
           xmlns="http://www.w3.org/2000/svg"
-          aria-label="Synko logo"
+          aria-label="Synko Logo - A cube-like 3D shape formed by stacked layers"
         >
           <path
             d="M12 2L2 7L12 12L22 7L12 2Z"

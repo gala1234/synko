@@ -3,7 +3,7 @@ import { Inter, Sora } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
-import "./globals.css";
+import './globals.css';
 
 
 const inter = Inter({
@@ -43,21 +43,21 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://synko.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://synko.dev"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "es_ES",
-    url: "https://synko.com",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://synko.dev",
     siteName: "Synko",
     title: "Synko - Orquestamos IA y automatización para crecer sin fricción",
     description:
       "Transformamos procesos complejos en soluciones elegantes. Especialistas en IA y automatización para empresas que buscan crecer sin fricción.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Synko - IA y automatización",
@@ -69,8 +69,8 @@ export const metadata: Metadata = {
     title: "Synko - Orquestamos IA y automatización para crecer sin fricción",
     description:
       "Transformamos procesos complejos en soluciones elegantes. Especialistas en IA y automatización.",
-    images: ["/og-image.jpg"],
-    creator: "@synko",
+    images: ["/og-image.png"],
+    creator: "@synko_dev",
   },
   robots: {
     index: true,
@@ -82,10 +82,7 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
-  verification: {
-    google: "your-google-verification-code",
-  },
+  }
 };
 
 export default function RootLayout({
