@@ -8,17 +8,23 @@ import { submitContact } from "./actions";
 import { useFormState, useFormStatus } from "react-dom";
 import { useEffect, useState } from "react";
 
-function SubmitButton() {
+function SubmitButton({ isSuccess }: { isSuccess: boolean }) {
   const { pending } = useFormStatus();
+  const isDisabled = pending || isSuccess;
+
   return (
     <Button
       type="submit"
       variant="primary"
-      className="w-full"
-      aria-disabled={pending}
-      disabled={pending}
+      className="w-full focus:ring-2 focus:ring-[var(--color-primary)] focus:ring-offset-2 focus:outline-none"
+      aria-disabled={isDisabled}
+      disabled={isDisabled}
     >
-      {pending ? "Enviando..." : "Enviar mensaje"}
+      {pending
+        ? "Enviando..."
+        : isSuccess
+          ? "Mensaje enviado"
+          : "Enviar mensaje"}
     </Button>
   );
 }
@@ -81,6 +87,24 @@ export default function ContactPage() {
                     <p className="mt-1 text-sm text-green-700">
                       Te responderemos en las próximas 24-48 horas.
                     </p>
+                    <div className="mt-4">
+                      <p className="mb-2 text-sm text-green-700">
+                        ¿Necesitas una respuesta más rápida?
+                      </p>
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="border-green-300 text-green-700 hover:bg-green-100 focus:ring-2 focus:ring-green-500 focus:outline-none"
+                        onClick={() =>
+                          window.open(
+                            "mailto:hola@synko.dev?subject=Consulta urgente",
+                            "_blank"
+                          )
+                        }
+                      >
+                        Contacto directo
+                      </Button>
+                    </div>
                   </div>
                 )}
 
@@ -106,10 +130,14 @@ export default function ContactPage() {
                       id="name"
                       name="name"
                       required
+                      disabled={state?.ok}
                       aria-describedby={
                         state?.errors?.name ? "name-error" : undefined
                       }
-                      className={`focus:ring-primary w-full rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 ${
+                      aria-errormessage={
+                        state?.errors?.name ? "name-error" : undefined
+                      }
+                      className={`w-full rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-[var(--color-primary)] focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 ${
                         state?.errors?.name
                           ? "border-red-500 bg-red-50"
                           : "border-border"
@@ -139,10 +167,14 @@ export default function ContactPage() {
                       id="email"
                       name="email"
                       required
+                      disabled={state?.ok}
                       aria-describedby={
                         state?.errors?.email ? "email-error" : undefined
                       }
-                      className={`focus:ring-primary w-full rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 ${
+                      aria-errormessage={
+                        state?.errors?.email ? "email-error" : undefined
+                      }
+                      className={`w-full rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-[var(--color-primary)] focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 ${
                         state?.errors?.email
                           ? "border-red-500 bg-red-50"
                           : "border-border"
@@ -171,7 +203,8 @@ export default function ContactPage() {
                       type="text"
                       id="websiteOrIg"
                       name="websiteOrIg"
-                      className="border-border focus:ring-primary w-full rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2"
+                      disabled={state?.ok}
+                      className="border-border w-full rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-[var(--color-primary)] focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
                       placeholder="https://tuweb.com o @tuinstagram"
                     />
                   </div>
@@ -187,10 +220,14 @@ export default function ContactPage() {
                       id="sector"
                       name="sector"
                       required
+                      disabled={state?.ok}
                       aria-describedby={
                         state?.errors?.sector ? "sector-error" : undefined
                       }
-                      className={`focus:ring-primary w-full rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 ${
+                      aria-errormessage={
+                        state?.errors?.sector ? "sector-error" : undefined
+                      }
+                      className={`w-full rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-[var(--color-primary)] focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 ${
                         state?.errors?.sector
                           ? "border-red-500 bg-red-50"
                           : "border-border"
@@ -225,10 +262,14 @@ export default function ContactPage() {
                       id="budget"
                       name="budget"
                       required
+                      disabled={state?.ok}
                       aria-describedby={
                         state?.errors?.budget ? "budget-error" : undefined
                       }
-                      className={`focus:ring-primary w-full rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 ${
+                      aria-errormessage={
+                        state?.errors?.budget ? "budget-error" : undefined
+                      }
+                      className={`w-full rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-[var(--color-primary)] focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 ${
                         state?.errors?.budget
                           ? "border-red-500 bg-red-50"
                           : "border-border"
@@ -263,10 +304,14 @@ export default function ContactPage() {
                       name="message"
                       rows={5}
                       required
+                      disabled={state?.ok}
                       aria-describedby={
                         state?.errors?.message ? "message-error" : undefined
                       }
-                      className={`focus:ring-primary w-full resize-none rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 ${
+                      aria-errormessage={
+                        state?.errors?.message ? "message-error" : undefined
+                      }
+                      className={`w-full resize-none rounded-lg border px-4 py-3 focus:border-transparent focus:ring-2 focus:ring-[var(--color-primary)] focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 ${
                         state?.errors?.message
                           ? "border-red-500 bg-red-50"
                           : "border-border"
@@ -296,7 +341,7 @@ export default function ContactPage() {
                     />
                   </div>
 
-                  <SubmitButton />
+                  <SubmitButton isSuccess={state?.ok || false} />
                 </form>
               </Card>
 

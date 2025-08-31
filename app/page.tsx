@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import Script from "next/script";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
@@ -22,7 +24,51 @@ import {
   Clock,
 } from "lucide-react";
 
-export default function HomePage() {
+export const metadata: Metadata = {
+  title: "Synko — IA y Automatización para crecer sin fricción",
+  description:
+    "Orquestamos agentes, APIs y datos para convertir procesos en resultados medibles.",
+  openGraph: {
+    title: "Synko — IA y Automatización",
+    description: "Agentes, APIs y datos conectados orientados a ROI.",
+    type: "website",
+    url: process.env.NEXT_PUBLIC_SITE_URL || "https://synko.dev",
+    siteName: "Synko",
+  },
+  alternates: {
+    canonical: process.env.NEXT_PUBLIC_SITE_URL || "https://synko.dev",
+  },
+};
+
+export default function HomeWrapper() {
+  const site = process.env.NEXT_PUBLIC_SITE_URL || "https://synko.dev";
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Synko",
+    url: site,
+    logo: `${site}/og-image.png`,
+    sameAs: [
+      "https://www.linkedin.com/company/synko",
+      "https://www.instagram.com/synko.ai",
+    ],
+  };
+
+  return (
+    <>
+      <Script
+        id="json-ld-organization"
+        type="application/ld+json"
+        strategy="beforeInteractive"
+      >
+        {JSON.stringify(jsonLd)}
+      </Script>
+      <HomePage />
+    </>
+  );
+}
+
+function HomePage() {
   return (
     <>
       {/* Hero Section */}

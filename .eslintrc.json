@@ -3,6 +3,7 @@
   "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": "error",
+    "react/no-danger": "off",
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off"
   },
