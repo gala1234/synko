@@ -13,10 +13,10 @@ export function Section({
   ...props
 }: Props) {
   const paddingClasses = {
-    sm: "py-[var(--space-8)]",
-    md: "py-[var(--space-12)]",
-    lg: "py-[var(--space-12)] md:py-20",
-    xl: "py-20 md:py-32",
+    sm: "py-6 sm:py-[var(--space-8)]",
+    md: "py-8 sm:py-[var(--space-12)]",
+    lg: "py-10 sm:py-[var(--space-12)] md:py-20",
+    xl: "py-12 sm:py-20 md:py-32",
   };
 
   return (
