@@ -4,21 +4,11 @@ import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import Link from "next/link";
-import productsData from "@/content/products.json";
-
-type Product = {
-  id: string;
-  sku: string;
-  title: string;
-  tagline: string;
-  description: string;
-  includes: string[];
-  price: string;
-  deliveryTime: string;
-};
+import productsData from "@/content/products-detailed.json";
+import { ProductDetailed } from "@/lib/products";
 
 export default function ProductosPage() {
-  const products = productsData as Product[];
+  const products = productsData as ProductDetailed[];
 
   return (
     <main>

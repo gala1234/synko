@@ -1,0 +1,110 @@
+[
+  {
+    "id": "launch",
+    "sku": "SKU-001",
+    "title": "Synko Launch",
+    "tagline": "Setup completo en 2 semanas",
+    "description": "Automatización completa de tu negocio con IA. Incluye análisis, implementación y optimización.",
+    "includes": [
+      "Análisis completo de procesos",
+      "Implementación de automatizaciones",
+      "Integración con sistemas existentes",
+      "Formación del equipo",
+      "Soporte durante 3 meses"
+    ],
+    "price": "1.800–2.400 €",
+    "deliveryTime": "2 semanas"
+  },
+  {
+    "id": "stockcheck",
+    "sku": "SKU-003",
+    "title": "Synko StockCheck",
+    "tagline": "Verifica stock en tiempo real",
+    "description": "Sistema de verificación de stock automatizado que mantiene tu inventario actualizado.",
+    "includes": [
+      "Monitoreo en tiempo real",
+      "Alertas automáticas",
+      "Integración con proveedores",
+      "Dashboard de control"
+    ],
+    "price": "900–1.200 €",
+    "deliveryTime": "1 semana"
+  },
+  {
+    "id": "bookpay",
+    "sku": "SKU-004",
+    "title": "Synko Book&Pay",
+    "tagline": "Reservas + pagos en automático",
+    "description": "Sistema automatizado de reservas y pagos que simplifica la gestión de citas y transacciones.",
+    "includes": [
+      "Sistema de reservas online",
+      "Procesamiento de pagos",
+      "Confirmaciones automáticas",
+      "Gestión de cancelaciones"
+    ],
+    "price": "900–1.200 €",
+    "deliveryTime": "1 semana"
+  },
+  {
+    "id": "raglite",
+    "sku": "SKU-005",
+    "title": "Synko RAG Lite",
+    "tagline": "Base de conocimiento con IA",
+    "description": "Sistema de gestión de conocimiento con IA que mejora la atención al cliente.",
+    "includes": [
+      "Base de conocimiento IA",
+      "Respuestas automáticas",
+      "Aprendizaje continuo",
+      "Integración con chat"
+    ],
+    "price": "1.200–1.800 €",
+    "deliveryTime": "2 semanas"
+  },
+  {
+    "id": "roiboard",
+    "sku": "SKU-006",
+    "title": "Synko ROI Board",
+    "tagline": "Dashboard de métricas y atribución",
+    "description": "Dashboard completo para medir el ROI y rendimiento de tus automatizaciones.",
+    "includes": [
+      "Métricas en tiempo real",
+      "Análisis de ROI",
+      "Reportes automáticos",
+      "Visualizaciones interactivas"
+    ],
+    "price": "600–1.000 €",
+    "deliveryTime": "1 semana"
+  },
+  {
+    "id": "scale",
+    "sku": "SKU-002",
+    "title": "Synko Scale",
+    "tagline": "Escala integraciones y reporting",
+    "description": "Solución avanzada para escalar tus automatizaciones y mejorar el reporting empresarial.",
+    "includes": [
+      "Integraciones avanzadas",
+      "Reporting empresarial",
+      "Escalabilidad automática",
+      "Soporte prioritario",
+      "Consultoría estratégica"
+    ],
+    "price": "3.000–4.500 €",
+    "deliveryTime": "3 semanas"
+  },
+  {
+    "id": "care",
+    "sku": "SKU-007",
+    "title": "Synko Care Plan",
+    "tagline": "Optimización mensual continua",
+    "description": "Plan de mantenimiento y optimización continua para maximizar el rendimiento de tus automatizaciones.",
+    "includes": [
+      "Optimización mensual",
+      "Monitoreo 24/7",
+      "Actualizaciones automáticas",
+      "Soporte prioritario",
+      "Reportes mensuales"
+    ],
+    "price": "350–700 €/mes",
+    "deliveryTime": "Continuo"
+  }
+]
