@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
@@ -160,9 +161,11 @@ export default function CasosPage() {
                     <div className="prose prose-sm max-w-none">
                       {renderMarkdownContent(caseStudy.content)}
                     </div>
-                    <Button variant="outline" className="mt-6">
-                      Ver caso completo
-                    </Button>
+                    <Link href={`/casos/${caseStudy.slug}`}>
+                      <Button variant="outline" className="mt-6">
+                        Ver caso completo
+                      </Button>
+                    </Link>
                   </div>
                   <div
                     className={`flex h-64 items-center justify-center rounded-2xl bg-[rgb(var(--color-muted))]/10 ${
