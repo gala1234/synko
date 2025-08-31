@@ -4,107 +4,114 @@
     "sku": "SKU-001",
     "title": "Synko Launch",
     "tagline": "Setup completo en 2 semanas",
-    "description": "Automatización completa de tu negocio con IA. Incluye análisis, implementación y optimización.",
+    "description": "Para fundadores de e-commerce y negocios digitales que quieren automatizar rápido y empezar a escalar sin dolores de cabeza. Nos encargamos del análisis, la implementación y la optimización para que dejes de apagar fuegos y te enfoques en crecer.",
     "includes": [
-      "Análisis completo de procesos",
-      "Implementación de automatizaciones",
-      "Integración con sistemas existentes",
-      "Formación del equipo",
-      "Soporte durante 3 meses"
+      "Análisis completo de procesos y oportunidades",
+      "Implementación de automatizaciones clave",
+      "Integración con sistemas y plataformas existentes",
+      "Formación del equipo para adopción rápida",
+      "Soporte durante 3 meses para ajustes finos"
     ],
     "price": "1.800–2.400 €",
-    "deliveryTime": "2 semanas"
+    "deliveryTime": "2 semanas",
+    "bestFor": "E-commerce/negocios digitales con poco tiempo y muchas tareas repetitivas."
   },
   {
     "id": "stockcheck",
     "sku": "SKU-003",
     "title": "Synko StockCheck",
     "tagline": "Verifica stock en tiempo real",
-    "description": "Sistema de verificación de stock automatizado que mantiene tu inventario actualizado.",
+    "description": "Para tiendas online con catálogo amplio que necesitan control de inventario 24/7. Evita roturas de stock, errores en fichas de producto y ventas perdidas con un sistema que sincroniza y alerta en tiempo real.",
     "includes": [
-      "Monitoreo en tiempo real",
-      "Alertas automáticas",
-      "Integración con proveedores",
-      "Dashboard de control"
+      "Monitoreo en tiempo real del inventario",
+      "Alertas automáticas ante roturas o umbrales bajos",
+      "Integración con proveedores y tu plataforma",
+      "Dashboard de control para tu equipo"
     ],
     "price": "900–1.200 €",
-    "deliveryTime": "1 semana"
+    "deliveryTime": "1 semana",
+    "bestFor": "E-commerce con alto volumen de pedidos y múltiples SKUs."
   },
   {
     "id": "bookpay",
     "sku": "SKU-004",
     "title": "Synko Book&Pay",
     "tagline": "Reservas + pagos en automático",
-    "description": "Sistema automatizado de reservas y pagos que simplifica la gestión de citas y transacciones.",
+    "description": "Para negocios que viven de citas o clases y necesitan que calendario y cobros funcionen solos. Reduce ausencias, mejora la experiencia y cobra sin fricción, todo en un mismo flujo.",
     "includes": [
-      "Sistema de reservas online",
-      "Procesamiento de pagos",
-      "Confirmaciones automáticas",
-      "Gestión de cancelaciones"
+      "Sistema de reservas online con recordatorios",
+      "Procesamiento de pagos y facturación",
+      "Confirmaciones y cancelaciones automáticas",
+      "Panel para gestión de agenda y clientes"
     ],
     "price": "900–1.200 €",
-    "deliveryTime": "1 semana"
+    "deliveryTime": "1 semana",
+    "bestFor": "Estudios, centros de estética, gimnasios, consultores, terapeutas y formadores."
   },
   {
     "id": "raglite",
     "sku": "SKU-005",
     "title": "Synko RAG Lite",
     "tagline": "Base de conocimiento con IA",
-    "description": "Sistema de gestión de conocimiento con IA que mejora la atención al cliente.",
+    "description": "Para equipos de soporte y ventas saturados que reciben las mismas preguntas una y otra vez. Centraliza tu conocimiento y responde mejor y más rápido con IA, sin contratar más personal.",
     "includes": [
-      "Base de conocimiento IA",
-      "Respuestas automáticas",
-      "Aprendizaje continuo",
-      "Integración con chat"
+      "Base de conocimiento potenciada con IA (RAG)",
+      "Respuestas automáticas en chat y canales clave",
+      "Aprendizaje continuo con feedback real",
+      "Integración con tus herramientas actuales"
     ],
     "price": "1.200–1.800 €",
-    "deliveryTime": "2 semanas"
+    "deliveryTime": "2 semanas",
+    "bestFor": "Empresas con alto volumen de consultas repetitivas."
   },
   {
     "id": "roiboard",
     "sku": "SKU-006",
     "title": "Synko ROI Board",
     "tagline": "Dashboard de métricas y atribución",
-    "description": "Dashboard completo para medir el ROI y rendimiento de tus automatizaciones.",
+    "description": "Para founders y marketers que quieren ver claramente qué funciona. Mide el rendimiento real de tus automatizaciones y campañas, y toma decisiones con datos, no con intuición.",
     "includes": [
-      "Métricas en tiempo real",
-      "Análisis de ROI",
-      "Reportes automáticos",
-      "Visualizaciones interactivas"
+      "Métricas en tiempo real de procesos clave",
+      "Análisis de ROI y atribución",
+      "Reportes automáticos programados",
+      "Visualizaciones interactivas para decisiones rápidas"
     ],
     "price": "600–1.000 €",
-    "deliveryTime": "1 semana"
+    "deliveryTime": "1 semana",
+    "bestFor": "CEOs, founders y equipos de marketing orientados a datos."
   },
   {
     "id": "scale",
     "sku": "SKU-002",
     "title": "Synko Scale",
     "tagline": "Escala integraciones y reporting",
-    "description": "Solución avanzada para escalar tus automatizaciones y mejorar el reporting empresarial.",
+    "description": "Para empresas que ya automatizaron lo básico y ahora quieren crecer con integraciones avanzadas, reporting empresarial y escalabilidad. Estabiliza, estandariza y multiplica tu impacto sin añadir complejidad.",
     "includes": [
-      "Integraciones avanzadas",
-      "Reporting empresarial",
-      "Escalabilidad automática",
-      "Soporte prioritario",
-      "Consultoría estratégica"
+      "Integraciones avanzadas entre sistemas críticos",
+      "Reporting empresarial y modelos de datos",
+      "Escalabilidad y hardening de procesos",
+      "Soporte prioritario y SLAs",
+      "Consultoría estratégica para roadmap de automatización"
     ],
     "price": "3.000–4.500 €",
-    "deliveryTime": "3 semanas"
+    "deliveryTime": "3 semanas",
+    "bestFor": "Negocios consolidados que buscan pasar al siguiente nivel."
   },
   {
     "id": "care",
     "sku": "SKU-007",
     "title": "Synko Care Plan",
     "tagline": "Optimización mensual continua",
-    "description": "Plan de mantenimiento y optimización continua para maximizar el rendimiento de tus automatizaciones.",
+    "description": "Para negocios donde la automatización es misión crítica. Monitorizamos, mantenemos y mejoramos tus sistemas cada mes para que el rendimiento no caiga y las oportunidades se conviertan en resultados.",
     "includes": [
-      "Optimización mensual",
-      "Monitoreo 24/7",
-      "Actualizaciones automáticas",
+      "Optimización mensual basada en métricas",
+      "Monitoreo 24/7 y alertas",
+      "Actualizaciones y mejoras continuas",
       "Soporte prioritario",
-      "Reportes mensuales"
+      "Reportes mensuales accionables"
     ],
     "price": "350–700 €/mes",
-    "deliveryTime": "Continuo"
+    "deliveryTime": "Continuo",
+    "bestFor": "Empresas que quieren rendimiento máximo y cero sorpresas."
   }
 ]
