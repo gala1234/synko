@@ -171,3 +171,57 @@ img {
     --color-muted: 255 255 255;
   }
 }
+
+/* Custom animations - Intersection Observer based to prevent SSR mismatch */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation classes that will be applied via JavaScript */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-on-scroll.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-on-scroll.delay-100 {
+  transition-delay: 0.1s;
+}
+
+.animate-on-scroll.delay-200 {
+  transition-delay: 0.2s;
+}
+
+.animate-on-scroll.delay-300 {
+  transition-delay: 0.3s;
+}
+
+/* Hover effects for interactive elements */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}

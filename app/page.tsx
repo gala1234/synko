@@ -76,7 +76,7 @@ function HomePage() {
       <Section padding="lg">
         <Container>
           <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
-            <div>
+            <div className="animate-on-scroll">
               <div className="mb-6 flex flex-wrap gap-2">
                 <Badge className="rounded-full bg-[rgb(var(--color-highlight)/0.1)] px-3 py-1 text-sm font-medium text-[rgb(var(--color-highlight))]">
                   E-commerce
@@ -109,8 +109,8 @@ function HomePage() {
                 </Button>
               </div>
             </div>
-            <div className="flex items-center justify-center">
-              <div className="flex h-48 w-full max-w-sm items-center justify-center rounded-2xl bg-gradient-to-br from-[rgb(var(--color-primary)/0.2)] to-[rgb(var(--color-highlight)/0.2)] sm:h-64 sm:max-w-md">
+            <div className="flex items-center justify-center animate-on-scroll delay-300">
+              <div className="flex h-48 w-full max-w-sm items-center justify-center rounded-2xl bg-gradient-to-br from-[rgb(var(--color-primary)/0.2)] to-[rgb(var(--color-highlight)/0.2)] sm:h-64 sm:max-w-md hover-scale">
                 <div className="text-center text-[rgb(var(--color-muted))]">
                   <Bot size={48} className="mx-auto mb-3 sm:mb-4" />
                   <p className="text-sm sm:text-base">Automatizaciones Synko</p>
@@ -135,7 +135,7 @@ function HomePage() {
           </div>
           <div className="grid gap-6 sm:grid-cols-1 lg:grid-cols-3">
             {/* Synko Launch */}
-            <div className="rounded-2xl border border-[rgb(var(--color-border))] bg-[rgb(var(--color-surface))] p-6">
+            <div className="rounded-2xl border border-[rgb(var(--color-border))] bg-[rgb(var(--color-surface))] p-6 animate-on-scroll delay-100 hover-lift">
               <div className="mb-4 flex items-center gap-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[rgb(var(--color-primary))] text-white">
                   <Play size={20} />
@@ -169,7 +169,7 @@ function HomePage() {
             </div>
 
             {/* Synko StockCheck */}
-            <div className="rounded-2xl border border-[rgb(var(--color-border))] bg-[rgb(var(--color-surface))] p-6">
+            <div className="rounded-2xl border border-[rgb(var(--color-border))] bg-[rgb(var(--color-surface))] p-6 animate-on-scroll delay-200 hover-lift">
               <div className="mb-4 flex items-center gap-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[rgb(var(--color-primary))] text-white">
                   <BarChart3 size={20} />
@@ -203,7 +203,7 @@ function HomePage() {
             </div>
 
             {/* Synko Care Plan */}
-            <div className="rounded-2xl border border-[rgb(var(--color-border))] bg-[rgb(var(--color-surface))] p-6">
+            <div className="rounded-2xl border border-[rgb(var(--color-border))] bg-[rgb(var(--color-surface))] p-6 animate-on-scroll delay-300 hover-lift">
               <div className="mb-4 flex items-center gap-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[rgb(var(--color-primary))] text-white">
                   <RefreshCcw size={20} />

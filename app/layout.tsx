@@ -3,6 +3,7 @@ import { Inter, Sora } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { ScrollAnimations } from "@/components/ui/ScrollAnimations";
 
 import "./globals.css";
 
@@ -106,6 +107,7 @@ export default function RootLayout({
           <Footer />
         </div>
         <Analytics />
+        <ScrollAnimations />
       </body>
     </html>
   );
