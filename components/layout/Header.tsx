@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Logo } from "@/components/ui/Logo";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
+import siteData from "@/content/site.json";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -45,7 +46,9 @@ export function Header() {
           <div className="hidden md:flex items-center space-x-4">
             <ThemeToggle />
             <Button variant="highlight" size="sm">
-              Solicitar propuesta
+              <Link href="/contacto">
+                Solicitar propuesta
+              </Link>
             </Button>
           </div>
 
@@ -100,7 +103,9 @@ export function Header() {
               ))}
               <div className="px-3 py-2">
                 <Button variant="highlight" size="sm" className="w-full">
-                  Solicitar propuesta
+                  <Link href="/contacto">
+                    Solicitar propuesta
+                  </Link>
                 </Button>
               </div>
             </div>

@@ -7,6 +7,8 @@ import { Metrics } from "@/components/ui/Metrics";
 import { Testimonial } from "@/components/ui/Testimonial";
 import { CtaBanner } from "@/components/ui/CtaBanner";
 import Link from "next/link";
+import servicesData from "@/content/services.json";
+import testimonialsData from "@/content/testimonials.json";
 import { 
   Bot, 
   Zap, 
@@ -82,51 +84,33 @@ export default function HomePage() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <FeatureCard
-              icon={<Bot size={24} />}
-              title="Agentes IA con datos propios"
-              bullets={[
-                "Bots que entienden tu catálogo, FAQs y políticas.",
-                "Responden en IG/WhatsApp/Web de forma contextual.",
-                "Entrenamiento ligero con tus datos."
-              ]}
-            />
-            <FeatureCard
-              icon={<Zap size={24} />}
-              title="Integraciones avanzadas con APIs"
-              bullets={[
-                "Consulta stock en Shopify o Woo antes de vender.",
-                "Reservas automáticas en Google Calendar.",
-                "Pagos seguros vía Stripe."
-              ]}
-            />
-            <FeatureCard
-              icon={<TrendingUp size={24} />}
-              title="Automatización ventas & marketing"
-              bullets={[
-                "Leads desde ManyChat → CRM/email.",
-                "Campañas automatizadas y alertas en Slack.",
-                "Ahorra horas de seguimiento manual."
-              ]}
-            />
-            <FeatureCard
-              icon={<BarChart3 size={24} />}
-              title="Analítica & métricas"
-              bullets={[
-                "Dashboards en Notion/Airtable/Looker Studio.",
-                "Embudo de conversaciones → ventas.",
-                "Exportable a CSV/JSON."
-              ]}
-            />
-            <FeatureCard
-              icon={<Settings size={24} />}
-              title="Mantenimiento & optimización"
-              bullets={[
-                "Iteraciones mensuales con test A/B.",
-                "Monitoreo de errores y latencia.",
-                "Mejora continua del ROI."
-              ]}
-            />
+            {servicesData.slice(0, 5).map((service) => {
+              const getServiceIcon = (id: string) => {
+                switch (id) {
+                  case "agentes-ia":
+                    return <Bot size={24} />;
+                  case "integraciones-apis":
+                    return <Zap size={24} />;
+                  case "automatizacion-ventas":
+                    return <TrendingUp size={24} />;
+                  case "analitica-metricas":
+                    return <BarChart3 size={24} />;
+                  case "mantenimiento":
+                    return <Settings size={24} />;
+                  default:
+                    return <Bot size={24} />;
+                }
+              };
+              
+              return (
+                <FeatureCard
+                  key={service.id}
+                  icon={getServiceIcon(service.id)}
+                  title={service.title}
+                  bullets={service.bullets}
+                />
+              );
+            })}
           </div>
         </Container>
       </Section>
@@ -229,21 +213,14 @@ export default function HomePage() {
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            <Testimonial
-              quote="Con Synko automatizamos atención en IG, ahora el 60% de DMs son ventas directas."
-              author="Laura G."
-              role="Tienda online moda"
-            />
-            <Testimonial
-              quote="El bot reserva y cobra citas en automático; redujimos no-shows 22%."
-              author="Carlos P."
-              role="Clínica dental"
-            />
-            <Testimonial
-              quote="Nuestro equipo ya no responde lo mismo 50 veces; tenemos +17 altas/mes sin aumentar personal."
-              author="Ana S."
-              role="Gym boutique"
-            />
+            {testimonialsData.map((testimonial) => (
+              <Testimonial
+                key={testimonial.name}
+                quote={testimonial.quote}
+                author={testimonial.name}
+                role={testimonial.company}
+              />
+            ))}
           </div>
         </Container>
       </Section>
