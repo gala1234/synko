@@ -14,25 +14,19 @@ type Props = HTMLAttributes<HTMLDivElement> & {
 
 export function Metrics({ metrics, className, ...props }: Props) {
   return (
-    <div
-      className={cn(
-        "grid md:grid-cols-3 gap-6",
-        className
-      )}
-      {...props}
-    >
+    <div className={cn("grid gap-6 md:grid-cols-3", className)} {...props}>
       {metrics.map((metric) => (
         <Card
           key={metric.label}
-          className="p-6 text-center hover:shadow-lg transition-shadow"
+          className="p-6 text-center transition-shadow hover:shadow-lg"
         >
-          <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-[var(--color-highlight)]/10 text-[var(--color-highlight)] mx-auto mb-4">
+          <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-[var(--color-highlight)]/10 text-[var(--color-highlight)]">
             {metric.icon}
           </div>
-          <div className="text-3xl font-bold text-[var(--color-highlight)] mb-2">
+          <div className="mb-2 text-3xl font-bold text-[var(--color-highlight)]">
             {metric.value}
           </div>
-          <div className="text-[var(--color-muted)] font-medium">
+          <div className="font-medium text-[var(--color-muted)]">
             {metric.label}
           </div>
         </Card>

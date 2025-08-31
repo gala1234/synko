@@ -3,8 +3,7 @@ import { Inter, Sora } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
-import './globals.css';
-
+import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -43,7 +42,9 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://synko.dev"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "https://synko.dev"
+  ),
   alternates: {
     canonical: "/",
   },
@@ -82,7 +83,7 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  }
+  },
 };
 
 export default function RootLayout({
@@ -92,7 +93,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`${inter.variable} ${sora.variable}`}>
-      <body className="min-h-screen bg-bg text-fg antialiased">
+      <body className="bg-bg text-fg min-h-screen antialiased">
         <div className="flex min-h-screen flex-col">
           <Header />
           <main className="flex-1">{children}</main>

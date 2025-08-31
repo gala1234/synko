@@ -8,30 +8,29 @@ type Props = HTMLAttributes<HTMLDivElement> & {
   role: string;
 };
 
-export function Testimonial({ quote, author, role, className, ...props }: Props) {
+export function Testimonial({
+  quote,
+  author,
+  role,
+  className,
+  ...props
+}: Props) {
   return (
     <Card
-      className={cn(
-        "p-6 hover:shadow-lg transition-shadow",
-        className
-      )}
+      className={cn("p-6 transition-shadow hover:shadow-lg", className)}
       {...props}
     >
       <div className="mb-4">
-      <span className="text-4xl text-[var(--color-highlight)] font-bold leading-none">
-          "
+        <span className="text-4xl leading-none font-bold text-[var(--color-highlight)]">
+          &ldquo;
         </span>
-        <p className="text-[var(--color-fg)] text-lg leading-relaxed mt-2">
+        <p className="mt-2 text-lg leading-relaxed text-[var(--color-fg)]">
           {quote}
         </p>
       </div>
       <div className="border-t border-[var(--color-border)] pt-4">
-        <div className="font-semibold text-[var(--color-fg)]">
-          {author}
-        </div>
-        <div className="text-[var(--color-muted)] text-sm">
-          {role}
-        </div>
+        <div className="font-semibold text-[var(--color-fg)]">{author}</div>
+        <div className="text-sm text-[var(--color-muted)]">{role}</div>
       </div>
     </Card>
   );

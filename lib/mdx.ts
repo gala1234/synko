@@ -1,6 +1,6 @@
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
 
 export interface CaseStudy {
   slug: string;
@@ -10,16 +10,16 @@ export interface CaseStudy {
   content: string;
 }
 
-const casesDirectory = path.join(process.cwd(), 'content/cases');
+const casesDirectory = path.join(process.cwd(), "content/cases");
 
 export function getAllCaseStudies(): CaseStudy[] {
   const fileNames = fs.readdirSync(casesDirectory);
   const allCases = fileNames
-    .filter(name => name.endsWith('.mdx'))
+    .filter((name) => name.endsWith(".mdx"))
     .map((name) => {
-      const slug = name.replace(/\.mdx$/, '');
+      const slug = name.replace(/\.mdx$/, "");
       const fullPath = path.join(casesDirectory, name);
-      const fileContents = fs.readFileSync(fullPath, 'utf8');
+      const fileContents = fs.readFileSync(fullPath, "utf8");
       const { data, content } = matter(fileContents);
 
       return {
@@ -37,7 +37,7 @@ export function getAllCaseStudies(): CaseStudy[] {
 export function getCaseStudyBySlug(slug: string): CaseStudy | null {
   try {
     const fullPath = path.join(casesDirectory, `${slug}.mdx`);
-    const fileContents = fs.readFileSync(fullPath, 'utf8');
+    const fileContents = fs.readFileSync(fullPath, "utf8");
     const { data, content } = matter(fileContents);
 
     return {

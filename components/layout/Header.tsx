@@ -21,7 +21,7 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-bg/80 backdrop-blur-md">
+    <header className="border-border bg-bg/80 sticky top-0 z-50 border-b backdrop-blur-md">
       <Container>
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -30,12 +30,12 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden items-center space-x-8 md:flex">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-muted hover:text-fg transition-colors"
+                className="text-muted hover:text-fg text-sm font-medium transition-colors"
               >
                 {item.name}
               </Link>
@@ -43,12 +43,10 @@ export function Header() {
           </nav>
 
           {/* Desktop Actions */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden items-center space-x-4 md:flex">
             <ThemeToggle />
             <Button variant="highlight" size="sm">
-              <Link href="/contacto">
-                Solicitar propuesta
-              </Link>
+              <Link href="/contacto">Solicitar propuesta</Link>
             </Button>
           </div>
 
@@ -57,7 +55,7 @@ export function Header() {
             <ThemeToggle />
             <button
               type="button"
-              className="flex h-9 w-9 items-center justify-center rounded-md border border-border bg-transparent text-fg transition-colors hover:bg-border focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+              className="border-border text-fg hover:bg-border focus:ring-primary flex h-9 w-9 items-center justify-center rounded-md border bg-transparent transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle mobile menu"
             >
@@ -89,13 +87,13 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="border-t border-border bg-bg md:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
+          <div className="border-border bg-bg border-t md:hidden">
+            <div className="space-y-1 px-2 pt-2 pb-3">
               {navigation.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block rounded-md px-3 py-2 text-base font-medium text-muted hover:bg-border hover:text-fg transition-colors"
+                  className="text-muted hover:bg-border hover:text-fg block rounded-md px-3 py-2 text-base font-medium transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
@@ -103,9 +101,7 @@ export function Header() {
               ))}
               <div className="px-3 py-2">
                 <Button variant="highlight" size="sm" className="w-full">
-                  <Link href="/contacto">
-                    Solicitar propuesta
-                  </Link>
+                  <Link href="/contacto">Solicitar propuesta</Link>
                 </Button>
               </div>
             </div>

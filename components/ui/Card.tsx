@@ -7,17 +7,26 @@ type Props = HTMLAttributes<HTMLDivElement> & {
   shadow?: "sm" | "md" | "lg";
 };
 
-export function Card({ className, hover = false, padding = "md", shadow = "sm", ...props }: Props) {
-  const base = "rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg)]";
-  
-  const hoverEffect = hover ? "transition-shadow duration-200 hover:shadow-md" : "";
-  
+export function Card({
+  className,
+  hover = false,
+  padding = "md",
+  shadow = "sm",
+  ...props
+}: Props) {
+  const base =
+    "rounded-2xl border border-[var(--color-border)] bg-[var(--color-bg)]";
+
+  const hoverEffect = hover
+    ? "transition-shadow duration-200 hover:shadow-md"
+    : "";
+
   const paddingClasses = {
     sm: "p-4",
     md: "p-6",
     lg: "p-8",
   };
-  
+
   const shadowClasses = {
     sm: "shadow-sm",
     md: "shadow-md",

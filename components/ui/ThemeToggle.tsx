@@ -14,9 +14,11 @@ export function ThemeToggle({ className }: ThemeToggleProps) {
   useEffect(() => {
     setMounted(true);
     const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
     const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
-    
+
     setTheme(initialTheme);
     document.documentElement.setAttribute("data-theme", initialTheme);
   }, []);
@@ -32,7 +34,7 @@ export function ThemeToggle({ className }: ThemeToggleProps) {
     return (
       <button
         className={cn(
-          "flex h-9 w-9 items-center justify-center rounded-md border border-[var(--color-border)] bg-transparent text-[var(--color-fg)] transition-colors hover:bg-[var(--color-border)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:ring-offset-2",
+          "flex h-9 w-9 items-center justify-center rounded-md border border-[var(--color-border)] bg-transparent text-[var(--color-fg)] transition-colors hover:bg-[var(--color-border)] focus:ring-2 focus:ring-[var(--color-primary)] focus:ring-offset-2 focus:outline-none",
           className
         )}
         aria-label="Toggle theme"
@@ -47,7 +49,7 @@ export function ThemeToggle({ className }: ThemeToggleProps) {
       type="button"
       onClick={toggleTheme}
       className={cn(
-        "flex h-9 w-9 items-center justify-center rounded-md border border-[var(--color-border)] bg-transparent text-[var(--color-fg)] transition-colors hover:bg-[var(--color-border)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:ring-offset-2",
+        "flex h-9 w-9 items-center justify-center rounded-md border border-[var(--color-border)] bg-transparent text-[var(--color-fg)] transition-colors hover:bg-[var(--color-border)] focus:ring-2 focus:ring-[var(--color-primary)] focus:ring-offset-2 focus:outline-none",
         className
       )}
       aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}

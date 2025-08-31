@@ -6,15 +6,13 @@ const ContactSchema = z.object({
   name: z.string().min(2, "Escribe tu nombre"),
   email: z.string().email("Email no válido"),
   websiteOrIg: z.string().optional().default(""),
-  sector: z
-    .enum(["ecommerce", "clinica", "gym", "restauracion", "otros"], { invalid_type_error: "Selecciona un sector" })
-    .or(z.string().min(1, "Selecciona un sector")),
-  budget: z.enum(["<1500", "1500-3000", "3000-6000", "6000+"], { invalid_type_error: "Selecciona presupuesto" }),
+  sector: z.enum(["ecommerce", "clinica", "gym", "restauracion", "otros"]),
+  budget: z.enum(["<1500", "1500-3000", "3000-6000", "6000+"]),
   message: z.string().min(10, "Cuéntame un poco más"),
   // honeypot
   company: z.string().max(0, "Campo inválido"),
   // timing token (anti-bot básico)
-  t: z.string().optional()
+  t: z.string().optional(),
 });
 
 type ContactInput = z.infer<typeof ContactSchema>;
@@ -24,24 +22,36 @@ export async function submitContact(prevState: any, formData: FormData) {
     name: String(formData.get("name") || ""),
     email: String(formData.get("email") || ""),
     websiteOrIg: String(formData.get("websiteOrIg") || ""),
-    sector: String(formData.get("sector") || ""),
+    sector: String(formData.get("sector") || "") as
+      | "ecommerce"
+      | "clinica"
+      | "gym"
+      | "restauracion"
+      | "otros",
     budget: String(formData.get("budget") || "") as any,
     message: String(formData.get("message") || ""),
     company: String(formData.get("company") || ""),
-    t: String(formData.get("t") || "")
+    t: String(formData.get("t") || ""),
   };
 
   const start = Number(formData.get("ts") || "0");
   const elapsed = Date.now() - start;
   // Simple anti-spam: si envía en < 1200ms, consideramos bot
   if (elapsed < 1200) {
-    return { ok: false, error: "Envio demasiado rápido. Inténtalo de nuevo en unos segundos." };
+    return {
+      ok: false,
+      error: "Envio demasiado rápido. Inténtalo de nuevo en unos segundos.",
+    };
   }
 
   const parsed = ContactSchema.safeParse(payload);
   if (!parsed.success) {
     const fieldErrors = parsed.error.flatten().fieldErrors;
-    return { ok: false, errors: fieldErrors, error: "Revisa los campos marcados en rojo." };
+    return {
+      ok: false,
+      errors: fieldErrors,
+      error: "Revisa los campos marcados en rojo.",
+    };
   }
 
   try {

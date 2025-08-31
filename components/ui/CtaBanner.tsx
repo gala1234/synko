@@ -12,28 +12,31 @@ type Props = HTMLAttributes<HTMLDivElement> & {
   ctaHref: string;
 };
 
-export function CtaBanner({ title, subtitle, ctaLabel, ctaHref, className, ...props }: Props) {
+export function CtaBanner({
+  title,
+  subtitle,
+  ctaLabel,
+  ctaHref,
+  className,
+  ...props
+}: Props) {
   const router = useRouter();
-  
+
   return (
     <div
       className={cn(
-        "bg-[var(--color-primary)] text-white rounded-2xl p-8 md:p-12 text-center",
+        "rounded-2xl bg-[var(--color-primary)] p-8 text-center text-white md:p-12",
         className
       )}
       {...props}
     >
-      <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-balance">
+      <h2 className="font-display mb-4 text-3xl font-bold text-balance md:text-4xl">
         {title}
       </h2>
-      <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto text-balance">
+      <p className="mx-auto mb-8 max-w-2xl text-xl text-balance text-white/90">
         {subtitle}
       </p>
-      <Button 
-        size="lg" 
-        variant="outline"
-        onClick={() => router.push(ctaHref)}
-      >
+      <Button size="lg" variant="outline" onClick={() => router.push(ctaHref)}>
         {ctaLabel}
       </Button>
     </div>

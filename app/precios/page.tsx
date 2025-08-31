@@ -18,19 +18,19 @@ export default function PreciosPage() {
   const plans = pricingData as PricingPlan[];
 
   const getButtonVariant = (planId: string) => {
-    return planId === 'scale' ? 'primary' : 'outline';
+    return planId === "scale" ? "primary" : "outline";
   };
 
   const getButtonText = (planId: string) => {
     switch (planId) {
-      case 'launch':
-        return 'Empezar ahora';
-      case 'scale':
-        return 'Solicitar demo';
-      case 'care':
-        return 'Contactar ventas';
+      case "launch":
+        return "Empezar ahora";
+      case "scale":
+        return "Solicitar demo";
+      case "care":
+        return "Contactar ventas";
       default:
-        return 'Más información';
+        return "Más información";
     }
   };
 
@@ -38,15 +38,16 @@ export default function PreciosPage() {
     <main>
       <Section padding="lg">
         <Container size="lg">
-          <div className="text-center max-w-3xl mx-auto">
+          <div className="mx-auto max-w-3xl text-center">
             <Badge variant="highlight" size="md" className="mb-4">
               Precios
             </Badge>
-            <h1 className="text-4xl md:text-5xl font-display font-bold text-[var(--color-fg)] mb-6">
+            <h1 className="font-display mb-6 text-4xl font-bold text-[var(--color-fg)] md:text-5xl">
               Planes que se adaptan a tu crecimiento
             </h1>
-            <p className="text-xl text-[var(--color-muted)] mb-8">
-              Desde automatización básica hasta soluciones empresariales completas.
+            <p className="mb-8 text-xl text-[var(--color-muted)]">
+              Desde automatización básica hasta soluciones empresariales
+              completas.
             </p>
           </div>
         </Container>
@@ -54,44 +55,50 @@ export default function PreciosPage() {
 
       <Section padding="lg">
         <Container size="lg">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid gap-8 md:grid-cols-3">
             {plans.map((plan, index) => (
-              <Card 
-                key={plan.id} 
+              <Card
+                key={plan.id}
                 className={`p-8 text-center ${
-                  plan.id === 'scale' ? 'border-[var(--color-highlight)] relative' : ''
+                  plan.id === "scale"
+                    ? "relative border-[var(--color-highlight)]"
+                    : ""
                 }`}
               >
-                {plan.id === 'scale' && (
-                  <Badge variant="highlight" size="sm" className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                {plan.id === "scale" && (
+                  <Badge
+                    variant="highlight"
+                    size="sm"
+                    className="absolute -top-3 left-1/2 -translate-x-1/2 transform"
+                  >
                     Más popular
                   </Badge>
                 )}
-                
-                <h3 className="text-2xl font-display font-bold text-[var(--color-fg)] mb-4">
+
+                <h3 className="font-display mb-4 text-2xl font-bold text-[var(--color-fg)]">
                   {plan.title}
                 </h3>
-                
+
                 <div className="mb-6">
                   <span className="text-4xl font-bold text-[var(--color-highlight)]">
                     {plan.priceRange}
                   </span>
                 </div>
-                
-                <p className="text-[var(--color-muted)] mb-6">
+
+                <p className="mb-6 text-[var(--color-muted)]">
                   {plan.description}
                 </p>
-                
-                <ul className="space-y-3 text-[var(--color-muted)] mb-6">
+
+                <ul className="mb-6 space-y-3 text-[var(--color-muted)]">
                   {plan.bullets.map((bullet, bulletIndex) => (
                     <li key={`${plan.id}-bullet-${bulletIndex}`}>• {bullet}</li>
                   ))}
                 </ul>
-                
-                <p className="text-sm text-[var(--color-muted)] mb-8 italic">
+
+                <p className="mb-8 text-sm text-[var(--color-muted)] italic">
                   {plan.notes}
                 </p>
-                
+
                 <Button variant={getButtonVariant(plan.id)} className="w-full">
                   {getButtonText(plan.id)}
                 </Button>

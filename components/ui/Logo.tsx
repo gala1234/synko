@@ -24,7 +24,7 @@ export function Logo({ className, size = "md", showText = true }: LogoProps) {
       {/* Logo SVG */}
       <div
         className={cn(
-          "flex items-center justify-center rounded-lg bg-gradient-to-br from-primary to-highlight",
+          "from-primary to-highlight flex items-center justify-center rounded-lg bg-gradient-to-br",
           logoSizes[size]
         )}
       >
@@ -58,15 +58,10 @@ export function Logo({ className, size = "md", showText = true }: LogoProps) {
           />
         </svg>
       </div>
-      
+
       {/* Logo Text */}
       {showText && (
-        <span
-          className={cn(
-            "font-display font-bold text-fg",
-            textSizes[size]
-          )}
-        >
+        <span className={cn("font-display text-fg font-bold", textSizes[size])}>
           Synko
         </span>
       )}

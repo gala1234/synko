@@ -22,15 +22,16 @@ export default function ServiciosPage() {
     <main>
       <Section padding="lg">
         <Container size="lg">
-          <div className="text-center max-w-3xl mx-auto">
+          <div className="mx-auto max-w-3xl text-center">
             <Badge variant="highlight" size="md" className="mb-4">
               Servicios
             </Badge>
-            <h1 className="text-4xl md:text-5xl font-display font-bold text-[var(--color-fg)] mb-6">
+            <h1 className="font-display mb-6 text-4xl font-bold text-[var(--color-fg)] md:text-5xl">
               Automatización e IA para tu negocio
             </h1>
-            <p className="text-xl text-[var(--color-muted)] mb-8">
-              Transformamos procesos manuales en sistemas automatizados que generan resultados medibles.
+            <p className="mb-8 text-xl text-[var(--color-muted)]">
+              Transformamos procesos manuales en sistemas automatizados que
+              generan resultados medibles.
             </p>
             <Button variant="primary" size="lg">
               Solicitar propuesta
@@ -45,49 +46,53 @@ export default function ServiciosPage() {
             {services.map((service) => (
               <Card key={service.id} className="p-8">
                 <div className="mb-6">
-                  <h2 className="text-2xl font-display font-bold text-[var(--color-fg)] mb-2">
+                  <h2 className="font-display mb-2 text-2xl font-bold text-[var(--color-fg)]">
                     {service.title}
                   </h2>
-                  <p className="text-lg text-[var(--color-primary)] font-medium mb-4">
+                  <p className="mb-4 text-lg font-medium text-[var(--color-primary)]">
                     {service.subtitle}
                   </p>
-                  <p className="text-[var(--color-muted)] mb-6">
+                  <p className="mb-6 text-[var(--color-muted)]">
                     {service.description}
                   </p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-6">
+                <div className="grid gap-6 md:grid-cols-3">
                   <div>
-                    <h3 className="text-lg font-semibold text-[var(--color-fg)] mb-3">
+                    <h3 className="mb-3 text-lg font-semibold text-[var(--color-fg)]">
                       Características
                     </h3>
                     <ul className="space-y-2 text-[var(--color-muted)]">
-                       {service.bullets.map((bullet, index) => (
-                         <li key={`${service.id}-bullet-${index}`}>• {bullet}</li>
-                       ))}
-                     </ul>
+                      {service.bullets.map((bullet, index) => (
+                        <li key={`${service.id}-bullet-${index}`}>
+                          • {bullet}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-[var(--color-fg)] mb-3">
+                    <h3 className="mb-3 text-lg font-semibold text-[var(--color-fg)]">
                       Casos de uso
                     </h3>
                     <ul className="space-y-2 text-[var(--color-muted)]">
-                       {service.examples.map((example, index) => (
-                         <li key={`${service.id}-example-${index}`}>• {example}</li>
-                       ))}
-                     </ul>
+                      {service.examples.map((example, index) => (
+                        <li key={`${service.id}-example-${index}`}>
+                          • {example}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-[var(--color-fg)] mb-3">
+                    <h3 className="mb-3 text-lg font-semibold text-[var(--color-fg)]">
                       Implementación
                     </h3>
                     <ul className="space-y-2 text-[var(--color-muted)]">
-                       {service.technical.map((tech, index) => (
-                         <li key={`${service.id}-tech-${index}`}>• {tech}</li>
-                       ))}
-                     </ul>
+                      {service.technical.map((tech, index) => (
+                        <li key={`${service.id}-tech-${index}`}>• {tech}</li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </Card>

@@ -6,7 +6,12 @@ type Props = HTMLAttributes<HTMLElement> & {
   padding?: "sm" | "md" | "lg" | "xl";
 };
 
-export function Section({ className, as: Component = "section", padding = "lg", ...props }: Props) {
+export function Section({
+  className,
+  as: Component = "section",
+  padding = "lg",
+  ...props
+}: Props) {
   const paddingClasses = {
     sm: "py-[var(--space-8)]",
     md: "py-[var(--space-12)]",
@@ -15,9 +20,6 @@ export function Section({ className, as: Component = "section", padding = "lg", 
   };
 
   return (
-    <Component
-      className={cn(paddingClasses[padding], className)}
-      {...props}
-    />
+    <Component className={cn(paddingClasses[padding], className)} {...props} />
   );
 }

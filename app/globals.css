@@ -3,7 +3,9 @@
 /* Tema/Tokens Synko (usados por toda la UI) */
 @theme {
   /* Tipografías */
-  --font-family-sans: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans";
+  --font-family-sans:
+    Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+    "Helvetica Neue", Arial, "Noto Sans";
   --font-family-display: Sora, var(--font-family-sans);
 
   /* Paleta base */
@@ -24,8 +26,9 @@
 
   /* Elevación */
   --box-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --box-shadow-md: 0 4px 12px -2px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.06);
-  --box-shadow-lg: 0 12px 32px -8px rgb(0 0 0 / 0.20);
+  --box-shadow-md:
+    0 4px 12px -2px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.06);
+  --box-shadow-lg: 0 12px 32px -8px rgb(0 0 0 / 0.2);
 
   /* Espaciado base 8px */
   --spacing-1: 0.25rem;
