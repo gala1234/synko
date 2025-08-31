@@ -35,7 +35,8 @@ export default function PrivacidadPage() {
                     de contacto electrónico:{" "}
                     <a
                       href="mailto:hola@synko.dev"
-                      className="text-primary hover:underline"
+                      className="hover:underline"
+                      style={{ color: "rgb(var(--color-primary))" }}
                     >
                       hola@synko.dev
                     </a>
@@ -219,7 +220,8 @@ export default function PrivacidadPage() {
                     Para ejercer estos derechos, puede contactarnos en{" "}
                     <a
                       href="mailto:hola@synko.dev"
-                      className="text-primary hover:underline"
+                      className="hover:underline"
+                      style={{ color: "rgb(var(--color-primary))" }}
                     >
                       hola@synko.dev
                     </a>
@@ -261,7 +263,8 @@ export default function PrivacidadPage() {
                       href="https://www.aepd.es"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-primary hover:underline"
+                      className="hover:underline"
+                      style={{ color: "rgb(var(--color-primary))" }}
                     >
                       www.aepd.es
                     </a>
@@ -292,7 +295,8 @@ export default function PrivacidadPage() {
                       <strong>Email:</strong>{" "}
                       <a
                         href="mailto:hola@synko.dev"
-                        className="text-primary hover:underline"
+                        className="hover:underline"
+                        style={{ color: "rgb(var(--color-primary))" }}
                       >
                         hola@synko.dev
                       </a>

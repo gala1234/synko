@@ -203,7 +203,8 @@ export default function TerminosPage() {
                     El tratamiento de datos personales se rige por nuestra{" "}
                     <a
                       href="/legal/privacidad"
-                      className="text-primary hover:underline"
+                      className="hover:underline"
+                      style={{ color: "rgb(var(--color-primary))" }}
                     >
                       Política de Privacidad
                     </a>
@@ -245,7 +246,8 @@ export default function TerminosPage() {
                       <strong>Email:</strong>{" "}
                       <a
                         href="mailto:hola@synko.dev"
-                        className="text-primary hover:underline"
+                        className="hover:underline"
+                        style={{ color: "rgb(var(--color-primary))" }}
                       >
                         hola@synko.dev
                       </a>

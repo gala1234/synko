@@ -24,9 +24,13 @@ export function Logo({ className, size = "md", showText = true }: LogoProps) {
       {/* Logo SVG */}
       <div
         className={cn(
-          "from-primary to-highlight flex items-center justify-center rounded-lg bg-gradient-to-br",
+          "flex items-center justify-center rounded-lg",
           logoSizes[size]
         )}
+        style={{
+          background:
+            "linear-gradient(135deg, rgb(var(--color-primary)) 0%, rgb(var(--color-highlight)) 100%)",
+        }}
       >
         <svg
           viewBox="0 0 24 24"
@@ -35,6 +39,7 @@ export function Logo({ className, size = "md", showText = true }: LogoProps) {
           xmlns="http://www.w3.org/2000/svg"
           aria-label="Synko Logo - A cube-like 3D shape formed by stacked layers"
         >
+          <title>Synko Logo</title>
           <path
             d="M12 2L2 7L12 12L22 7L12 2Z"
             stroke="currentColor"
@@ -61,7 +66,10 @@ export function Logo({ className, size = "md", showText = true }: LogoProps) {
 
       {/* Logo Text */}
       {showText && (
-        <span className={cn("font-display text-fg font-bold", textSizes[size])}>
+        <span
+          className={cn("font-display font-bold", textSizes[size])}
+          style={{ color: "rgb(var(--color-fg))" }}
+        >
           Synko
         </span>
       )}
